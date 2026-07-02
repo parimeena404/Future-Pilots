@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Future Pilots — EdTech & Digital Solutions</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/src/styles/main.css">
+</head>
+<body>
+
+  <!-- Top Navigation Header -->
+  <header class="header">
+    <div class="container header__inner">
+      <a href="/" class="header__logo">
+        <svg viewBox="0 0 40 40" fill="none"><path d="M6 34L34 20L6 6V18L26 20L6 22V34Z" fill="currentColor"/></svg>
+        Future Pilots
+      </a>
+      
+      <nav id="top-nav-links" class="header__nav">
+        <a href="/" class="header__link active">Home</a>
+        <a href="/about.html" class="header__link">About</a>
+        <a href="/education.html" class="header__link">Education</a>
+        <a href="/digital.html" class="header__link">Digital</a>
+        <a href="/pricing.html" class="header__link">Pricing</a>
+      </nav>
+      
+      <div class="header__actions">
+        <a href="/contact.html" class="btn btn--primary btn--sm">Contact Us</a>
+        <button id="mobile-nav-toggle" class="mobile-toggle" aria-expanded="false">
+          ☰
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main id="main-content" class="main-content">
+
+    <!-- Hero -->
+    <section id="hero" class="section section--hero">
+      <!-- Organic Blobs -->
+      <div class="shape shape--blob1 shape--orange" style="width:300px; height:300px; top:-50px; left:-100px;"></div>
+      <div class="shape shape--blob2 shape--teal" style="width:400px; height:400px; bottom:-100px; right:-100px;"></div>
+      
+      <div class="container hero__content js-stagger">
+        <div class="hero__text">
+          <p class="hero__tagline">Premium EdTech</p>
+          <h1 class="hero__headline">Empowering the Next Generation of Innovators.</h1>
+          <p class="hero__sub">Experience world-class hands-on workshops in AI/ML, Robotics, and Cyber Security designed to bridge the gap between classroom theory and industry reality.</p>
+          <div class="hero__ctas">
+            <a href="/contact.html" class="btn btn--primary">Book a Consultation</a>
+            <a href="/education.html" class="btn btn--outline">Discover Programs</a>
+          </div>
+        </div>
+        <div class="hero__visual" style="border-radius:24px; overflow:hidden; box-shadow:var(--shadow-lg);">
+          <img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?q=80&w=1000&auto=format&fit=crop" alt="Students in modern classroom" style="width:100%; height:100%; object-fit:cover; animation:none;" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Trust Bar -->
+    <section id="trust-bar" class="section section--trust" style="background:var(--bg-secondary);">
+      <div class="container trust__stats js-stagger">
+        <div class="trust__stat">
+          <span class="trust__stat-number" style="color:var(--accent-orange);">500+</span>
+          <span class="trust__stat-label">Students Trained</span>
+        </div>
+        <div class="trust__stat">
+          <span class="trust__stat-number" style="color:var(--text-primary);">50+</span>
+          <span class="trust__stat-label">Workshops Delivered</span>
+        </div>
+        <div class="trust__stat">
+          <span class="trust__stat-number" style="color:var(--accent-teal);">25+</span>
+          <span class="trust__stat-label">Partner Schools</span>
+        </div>
+        <div class="trust__stat">
+          <span class="trust__stat-number" style="color:var(--text-primary);">15+</span>
+          <span class="trust__stat-label">Curriculum Tracks</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- About / Services -->
+    <section id="services" class="section">
+      <div class="container js-stagger">
+        <div class="section__header">
+          <span class="section__label">What We Do</span>
+          <h2 class="section__title">Comprehensive Learning & Growth.</h2>
+          <p class="section__sub">We operate two key verticals to support the next generation of schools and businesses.</p>
+        </div>
+        
+        <div class="grid-2">
+          <!-- Education Card -->
+          <div class="card card--accent-orange">
+            <h3 class="vertical-card__title">Future Pilots Education</h3>
+            <p class="vertical-card__desc">Hands-on, project-based workshops for schools and colleges.</p>
+            <ul class="vertical-card__list">
+              <li>AI & Machine Learning</li>
+              <li>Robotics & IoT</li>
+              <li>Cyber Security & Ethical Hacking</li>
+              <li>Web & App Development</li>
+            </ul>
+            <a href="/education.html" class="btn btn--outline">Explore Education</a>
+          </div>
+          
+          <!-- Digital Card -->
+          <div class="card card--accent-teal">
+            <h3 class="vertical-card__title">Future Pilots Digital</h3>
+            <p class="vertical-card__desc">Premium SEO and digital marketing solutions for educational institutions and startups.</p>
+            <ul class="vertical-card__list">
+              <li>Search Engine Optimization (SEO)</li>
+              <li>Social Media Marketing</li>
+              <li>Web Development & UI/UX</li>
+              <li>Brand Strategy</li>
+            </ul>
+            <a href="/digital.html" class="btn btn--outline">Explore Digital</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="section section--alt">
+      <div class="container">
+        <div class="section__header js-stagger">
+          <span class="section__label">Pricing</span>
+          <h2 class="section__title">Transparent & Flexible Options.</h2>
+          <p class="section__sub">Choose the right package for your institution or business.</p>
+        </div>
+
+        <div class="pricing__tabs js-stagger">
+          <button class="pricing__tab active" data-tab="edu">Education Workshops</button>
+          <button class="pricing__tab" data-tab="digi">Digital Services</button>
+        </div>
+
+        <!-- Education Pricing -->
+        <div class="pricing__panel active js-stagger" data-panel="edu">
+          <div class="pricing__cards pricing__cards--four">
+            <div class="card">
+              <h4>1-Day Workshop</h4>
+              <p style="color:var(--text-secondary); font-size:var(--text-sm);">Introductory</p>
+              <div class="pricing__price">₹3,000<span style="font-size:var(--text-sm); color:var(--text-secondary); font-weight:normal;">/student</span></div>
+              <ul class="vertical-card__list" style="margin-top:var(--space-6);">
+                <li>Basic Concepts</li>
+                <li>1 Mini Project</li>
+                <li>Digital Certificate</li>
+              </ul>
+              <a href="/contact.html" class="btn btn--outline btn--full">Book Now</a>
+            </div>
+            <div class="card card--accent-orange" style="border-color:var(--accent-orange); box-shadow:var(--shadow-md);">
+              <h4>3-Day Workshop</h4>
+              <p style="color:var(--text-secondary); font-size:var(--text-sm);">Most Popular</p>
+              <div class="pricing__price">₹5,000<span style="font-size:var(--text-sm); color:var(--text-secondary); font-weight:normal;">/student</span></div>
+              <ul class="vertical-card__list" style="margin-top:var(--space-6);">
+                <li>In-depth Theory</li>
+                <li>3 Hands-on Projects</li>
+                <li>Printed Certificate</li>
+                <li>Hardware Kit Access</li>
+              </ul>
+              <a href="/contact.html" class="btn btn--primary btn--full">Book Now</a>
+            </div>
+            <div class="card">
+              <h4>5-Day Bootcamp</h4>
+              <p style="color:var(--text-secondary); font-size:var(--text-sm);">Intensive</p>
+              <div class="pricing__price">₹7,000<span style="font-size:var(--text-sm); color:var(--text-secondary); font-weight:normal;">/student</span></div>
+              <ul class="vertical-card__list" style="margin-top:var(--space-6);">
+                <li>Advanced Concepts</li>
+                <li>Major Group Project</li>
+                <li>Hackathon Day</li>
+                <li>Letter of Recommendation</li>
+              </ul>
+              <a href="/contact.html" class="btn btn--outline btn--full">Book Now</a>
+            </div>
+            <div class="card">
+              <h4>7-Day Premium</h4>
+              <p style="color:var(--text-secondary); font-size:var(--text-sm);">Complete Immersion</p>
+              <div class="pricing__price">₹10,000<span style="font-size:var(--text-sm); color:var(--text-secondary); font-weight:normal;">/student</span></div>
+              <ul class="vertical-card__list" style="margin-top:var(--space-6);">
+                <li>Full Curriculum</li>
+                <li>Industry Mentorship</li>
+                <li>Take-home Kits</li>
+                <li>Guaranteed Internship Interview</li>
+              </ul>
+              <a href="/contact.html" class="btn btn--outline btn--full">Book Now</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Digital Pricing -->
+        <div class="pricing__panel js-stagger" data-panel="digi">
+          <div class="pricing__cards">
+            <div class="card">
+              <h4>Basic SEO</h4>
+              <p style="color:var(--text-secondary); font-size:var(--text-sm);">For Startups</p>
+              <div class="pricing__price">₹15,000<span style="font-size:var(--text-sm); color:var(--text-secondary); font-weight:normal;">/mo</span></div>
+              <ul class="vertical-card__list" style="margin-top:var(--space-6);">
+                <li>On-page SEO</li>
+                <li>Monthly Audit Report</li>
+                <li>Google My Business</li>
+              </ul>
+              <a href="/contact.html" class="btn btn--outline btn--full">Get Started</a>
+            </div>
+            <div class="card card--accent-teal" style="border-color:var(--accent-teal); box-shadow:var(--shadow-md);">
+              <h4>Growth Package</h4>
+              <p style="color:var(--text-secondary); font-size:var(--text-sm);">For Growing Brands</p>
+              <div class="pricing__price">₹30,000<span style="font-size:var(--text-sm); color:var(--text-secondary); font-weight:normal;">/mo</span></div>
+              <ul class="vertical-card__list" style="margin-top:var(--space-6);">
+                <li>Advanced Technical SEO</li>
+                <li>Content Marketing</li>
+                <li>Backlink Building</li>
+                <li>Competitor Analysis</li>
+              </ul>
+              <a href="/contact.html" class="btn btn--primary btn--full" style="background:var(--accent-teal); border-color:var(--accent-teal);">Get Started</a>
+            </div>
+            <div class="card">
+              <h4>Custom Solution</h4>
+              <p style="color:var(--text-secondary); font-size:var(--text-sm);">Enterprise</p>
+              <div class="pricing__price">Let's Talk</div>
+              <ul class="vertical-card__list" style="margin-top:var(--space-6);">
+                <li>Full Stack Development</li>
+                <li>Comprehensive Marketing</li>
+                <li>Dedicated Account Manager</li>
+              </ul>
+              <a href="/contact.html" class="btn btn--outline btn--full">Contact Us</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Team Section -->
+    <section id="team" class="section">
+      <div class="container">
+        <div class="section__header js-stagger">
+          <span class="section__label">Our Team</span>
+          <h2 class="section__title">Meet the Visionaries.</h2>
+          <p class="section__sub">Driven by passion, guided by experience.</p>
+        </div>
+        <div id="team-grid" class="team__grid js-stagger">
+          <!-- Populated by JS -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="section section--alt">
+      <div class="container">
+        <div class="section__header js-stagger">
+          <span class="section__label">Testimonials</span>
+          <h2 class="section__title">What People Say.</h2>
+        </div>
+        <div id="testimonials-track" class="grid-2 js-stagger">
+          <!-- Populated by JS -->
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="section">
+      <div class="container" style="max-width: 800px;">
+        <div class="section__header js-stagger">
+          <span class="section__label">FAQ</span>
+          <h2 class="section__title">Got Questions?</h2>
+        </div>
+        <div id="faq-list" class="faq__list js-stagger">
+          <!-- Populated by JS -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact CTA Section -->
+    <section id="contact" class="section section--alt">
+      <div class="container js-stagger">
+        <div class="card card--accent-purple" style="text-align:center; padding:var(--space-12) var(--space-6);">
+          <h2 class="section__title">Ready to Transform Your Future?</h2>
+          <p class="section__sub" style="margin-bottom:var(--space-8);">Whether you're a school looking for innovative workshops or a business needing digital growth, we're here to help.</p>
+          <a href="/contact.html" class="btn btn--primary" style="background:var(--accent-purple); border-color:var(--accent-purple);">Get in Touch</a>
+        </div>
+      </div>
+    </section>
+  
+</main>
+
+  <!-- Footer -->
+  <footer id="footer" class="footer">
+    <div class="container footer__grid">
+      <div class="footer__brand">
+        <span class="footer__name">Future Pilots</span>
+        <p style="color:var(--text-secondary); font-size:var(--text-sm);">Transforming students from learners to innovators.</p>
+      </div>
+      <div class="footer__links">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="/about.html">About Us</a></li>
+          <li><a href="/pricing.html">Pricing</a></li>
+          <li><a href="/team.html">Our Team</a></li>
+        </ul>
+      </div>
+      <div class="footer__links">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="/education.html">Education</a></li>
+          <li><a href="/digital.html">Digital Solutions</a></li>
+          <li><a href="/contact.html">Book Workshop</a></li>
+        </ul>
+      </div>
+      <div class="footer__links">
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="tel:+916261072872">+91 62610 72872</a></li>
+          <li><a href="mailto:hr.futurepilot@gmail.com">hr.futurepilot@gmail.com</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container" style="text-align:center; padding-top:var(--space-6); color:var(--text-tertiary); font-size:var(--text-sm);">
+      &copy; 2026 Future Pilots. All rights reserved.
+    </div>
+  </footer>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>

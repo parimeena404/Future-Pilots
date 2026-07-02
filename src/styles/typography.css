@@ -1,0 +1,32 @@
+/* ============================================
+   TYPOGRAPHY
+   ============================================ */
+
+/* Utility classes */
+.mono-text {
+  font-family: var(--font-mono);
+  font-weight: 500;
+  letter-spacing: var(--tracking-mono);
+  font-size: var(--text-xs);
+  text-transform: uppercase;
+}
+
+.accent-text {
+  color: var(--accent);
+}
+
+.violet-text {
+  color: var(--violet);
+}
+
+/* Heading defaults */
+h1 { font-size: var(--text-4xl); }
+h2 { font-size: var(--text-2xl); }
+h3 { font-size: var(--text-xl); }
+h4 { font-size: var(--text-lg); }
+
+p {
+  font-size: var(--text-base);
+  color: var(--text-secondary);
+  line-height: var(--leading-normal);
+}
