@@ -80,6 +80,7 @@
               <li>Local SEO &amp; Google Business Optimization</li>
             </ul>
             <a href="/pricing.html" class="btn btn--primary">See SEO Packages</a>
+            <button class="btn btn--outline" data-explore-id="seo-digital" style="margin-left:var(--space-3); border-color:var(--ink-border-bright); cursor:pointer;">Deep Explore →</button>
           </div>
         </div>
 
@@ -100,6 +101,7 @@
               <li>Conversion Tracking Setup &amp; Analytics</li>
             </ul>
             <a href="/contact.html" class="btn btn--primary" style="background:var(--accent-purple); border-color:var(--accent-purple);">Book a Consultation</a>
+            <button class="btn btn--outline" data-explore-id="ai-automation" style="margin-left:var(--space-3); border-color:var(--ink-border-bright); cursor:pointer;">Deep Explore →</button>
           </div>
         </div>
 
@@ -120,6 +122,7 @@
               <li>Cloud Hosting, Maintenance &amp; 24/7 Support</li>
             </ul>
             <a href="/contact.html" class="btn btn--primary">Get Your Website Built</a>
+            <button class="btn btn--outline" data-explore-id="web-app-dev" style="margin-left:var(--space-3); border-color:var(--ink-border-bright); cursor:pointer;">Deep Explore →</button>
           </div>
         </div>
       </div>
@@ -303,6 +306,17 @@
       </div>
     </div>
   </footer>
+
+  <!-- ===== FLY-OUT EXPLORE DRAWER ===== -->
+  <div id="explore-drawer" class="explore-drawer" aria-hidden="true">
+    <div class="explore-drawer__backdrop" id="explore-drawer-backdrop"></div>
+    <div class="explore-drawer__content">
+      <button class="explore-drawer__close" id="explore-drawer-close" aria-label="Close drawer">×</button>
+      <div id="explore-drawer-body" class="explore-drawer__body">
+        <!-- Dynamic content injected here -->
+      </div>
+    </div>
+  </div>
 
   <script type="module" src="/src/main.js"></script>
 </body>

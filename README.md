@@ -1,5 +1,6 @@
 # Future Pilots
 
+[![Live Demo](https://img.shields.io/badge/Live-Demo-brightgreen.svg?style=for-the-badge)](https://future-pilots.vercel.app/)
 [![MIT License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![Vite](https://img.shields.io/badge/Build%20Tool-Vite-646CFF.svg)](https://vite.dev/)
 

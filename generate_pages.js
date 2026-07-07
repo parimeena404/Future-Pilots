@@ -205,6 +205,7 @@ const pages = {
             <div class="topic__text">
               <h4>AI/ML &amp; Agentic AI</h4>
               <p>Build AI models and websites using Prompt Engineering and Agentic AI frameworks. The skill of the decade.</p>
+              <a href="#" data-explore-id="ai-ml" class="explore-trigger-link" style="display:inline-block; margin-top:var(--space-2); font-size:var(--text-xs); color:var(--brand-orange); font-weight:600;">Explore Syllabus &amp; Projects →</a>
             </div>
           </div>
           <div class="topic__card">
@@ -212,6 +213,7 @@ const pages = {
             <div class="topic__text">
               <h4>Cyber Security</h4>
               <p>Understand ethical hacking, network security, and how to protect digital systems from real-world threats.</p>
+              <a href="#" data-explore-id="cyber-sec" class="explore-trigger-link" style="display:inline-block; margin-top:var(--space-2); font-size:var(--text-xs); color:var(--brand-orange); font-weight:600;">Explore Syllabus &amp; Projects →</a>
             </div>
           </div>
           <div class="topic__card">
@@ -219,6 +221,7 @@ const pages = {
             <div class="topic__text">
               <h4>Web &amp; App Development</h4>
               <p>Build functional websites and mobile apps from scratch — from concept to deployed product.</p>
+              <a href="#" data-explore-id="web-dev" class="explore-trigger-link" style="display:inline-block; margin-top:var(--space-2); font-size:var(--text-xs); color:var(--brand-orange); font-weight:600;">Explore Syllabus &amp; Projects →</a>
             </div>
           </div>
           <div class="topic__card">
@@ -226,6 +229,7 @@ const pages = {
             <div class="topic__text">
               <h4>Robotics, IoT &amp; Drone Tech</h4>
               <p>Assemble and program robots and drones. Learn sensors, microcontrollers, and connected systems.</p>
+              <a href="#" data-explore-id="robotics-iot" class="explore-trigger-link" style="display:inline-block; margin-top:var(--space-2); font-size:var(--text-xs); color:var(--brand-orange); font-weight:600;">Explore Syllabus &amp; Projects →</a>
             </div>
           </div>
           <div class="topic__card">
@@ -233,6 +237,7 @@ const pages = {
             <div class="topic__text">
               <h4>Electric Vehicle &amp; Automobile</h4>
               <p>Explore EV systems, battery technology, and the engineering behind next-gen vehicles.</p>
+              <a href="#" data-explore-id="ev-auto" class="explore-trigger-link" style="display:inline-block; margin-top:var(--space-2); font-size:var(--text-xs); color:var(--brand-orange); font-weight:600;">Explore Syllabus &amp; Projects →</a>
             </div>
           </div>
           <div class="topic__card">
@@ -240,6 +245,7 @@ const pages = {
             <div class="topic__text">
               <h4>Entrepreneurship &amp; Leadership</h4>
               <p>Learn to build businesses, pitch ideas, manage teams, and lead in the innovation economy.</p>
+              <a href="#" data-explore-id="business" class="explore-trigger-link" style="display:inline-block; margin-top:var(--space-2); font-size:var(--text-xs); color:var(--brand-orange); font-weight:600;">Explore Syllabus &amp; Projects →</a>
             </div>
           </div>
         </div>
@@ -422,6 +428,7 @@ const pages = {
               <li>Local SEO &amp; Google Business Optimization</li>
             </ul>
             <a href="/pricing.html" class="btn btn--primary">See SEO Packages</a>
+            <button class="btn btn--outline" data-explore-id="seo-digital" style="margin-left:var(--space-3); border-color:var(--ink-border-bright); cursor:pointer;">Deep Explore →</button>
           </div>
         </div>
 
@@ -442,6 +449,7 @@ const pages = {
               <li>Conversion Tracking Setup &amp; Analytics</li>
             </ul>
             <a href="/contact.html" class="btn btn--primary" style="background:var(--accent-purple); border-color:var(--accent-purple);">Book a Consultation</a>
+            <button class="btn btn--outline" data-explore-id="ai-automation" style="margin-left:var(--space-3); border-color:var(--ink-border-bright); cursor:pointer;">Deep Explore →</button>
           </div>
         </div>
 
@@ -462,6 +470,7 @@ const pages = {
               <li>Cloud Hosting, Maintenance &amp; 24/7 Support</li>
             </ul>
             <a href="/contact.html" class="btn btn--primary">Get Your Website Built</a>
+            <button class="btn btn--outline" data-explore-id="web-app-dev" style="margin-left:var(--space-3); border-color:var(--ink-border-bright); cursor:pointer;">Deep Explore →</button>
           </div>
         </div>
       </div>

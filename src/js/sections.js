@@ -98,10 +98,11 @@ export function renderTeam() {
   if (!grid) return;
 
   grid.innerHTML = teamData.map(member => `
-    <div class="card team__card">
+    <div class="card team__card" style="text-align:center; display:flex; flex-direction:column; align-items:center;">
       <div class="team__avatar">${member.initials}</div>
       <h4 class="team__name">${member.name}</h4>
       <span class="team__role">${member.role}</span>
+      <button class="btn btn--outline btn--sm" data-explore-member="${member.initials}" style="margin-top:var(--space-4); border-color:rgba(255,255,255,0.15); font-size:var(--text-xs); cursor:pointer;">View Profile</button>
     </div>
   `).join('');
 }

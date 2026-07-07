@@ -4,6 +4,7 @@
 
 import './styles/main.css';
 import { renderTeam, renderTestimonials, renderFAQ, initPricingTabs } from './js/sections.js';
+import { initExploreDrawer } from './js/explore.js';
 import { initSmoothScroll } from './js/smooth-scroll.js';
 import { Sidebar } from './js/sidebar.js';
 import { initAnimations } from './js/animations.js';
@@ -185,6 +186,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initPricingPanels();
   initMobileNav();
   initContactForm();
+  initExploreDrawer();
 
   setTimeout(() => {
     initCursor();
