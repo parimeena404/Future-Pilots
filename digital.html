@@ -3,17 +3,22 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Future Pilots Digital — Premium SEO & Web Development Solutions</title>
-  <meta name="description" content="Enterprise-grade website development, SEO strategies, AI automation, and digital marketing for educational institutions and startups. Grow with Future Pilots Digital." />
+  <title>Future Pilots — EdTech & Digital Solutions for Schools</title>
+  <meta name="description" content="Future Pilots delivers premium hands-on STEM workshops and digital marketing solutions for schools, coaching institutes, and businesses across India. AI, Robotics, EV, Cybersecurity and more." />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="/src/styles/main.css">
 </head>
 <body>
+
+  <!-- Custom Cursor -->
   <div id="fp-cursor"></div>
   <div id="fp-cursor-ring"></div>
+
+  <!-- Scroll Progress Bar -->
   <div id="fp-progress"></div>
 
+  <!-- ===== HEADER ===== -->
   <header class="header">
     <div class="container header__inner">
       <a href="/" class="header__logo">
@@ -29,154 +34,243 @@
       </nav>
       <div class="header__actions">
         <a href="/contact.html" class="btn btn--primary btn--sm">Book a Call</a>
-        <button id="mobile-nav-toggle" class="mobile-toggle" aria-expanded="false">☰</button>
+        <button id="mobile-nav-toggle" class="mobile-toggle" aria-expanded="false" aria-label="Toggle navigation">☰</button>
       </div>
     </div>
   </header>
 
   <main id="main-content" class="main-content">
 
-    <!-- Hero -->
-    <section class="section bg-grid" style="background: radial-gradient(ellipse 80% 60% at 50% -10%, rgba(0, 212, 170, 0.15) 0%, transparent 60%), radial-gradient(ellipse 50% 40% at 80% 60%, rgba(139, 92, 246, 0.08) 0%, transparent 60%), var(--ink); padding:var(--space-32) 0 var(--space-24); overflow:hidden; text-align:center;">
-      <div class="glow-orb glow-orb--teal" style="width:600px;height:600px;top:-200px;left:50%;transform:translateX(-50%);"></div>
+    <section class="section section--hero" style="padding-bottom:var(--space-12);">
+      <div class="shape shape--blob1 shape--purple" style="width:350px;height:350px;top:-70px;right:-100px;"></div>
+      <div class="shape shape--blob2 shape--teal" style="width:400px;height:400px;bottom:-100px;left:-100px;"></div>
       <div class="container js-stagger" style="position:relative;z-index:2;">
-        <span class="section__label" style="justify-content:center; margin-bottom:var(--space-6);">Digital Vertical</span>
-        <h1 class="section__title" style="font-size:clamp(3rem,8vw,6rem);">Future Pilots<br><span style="background:var(--gradient-teal);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">Digital.</span></h1>
-        <p class="section__sub" style="margin-bottom:var(--space-8);">Enterprise-grade website development, SEO strategies, and AI business automation for institutions and startups that demand results.</p>
-        <div class="hero__ctas" style="justify-content:center;">
-          <a href="/pricing.html" class="btn btn--primary">View Service Packages →</a>
-          <a href="/contact.html" class="btn btn--outline">Get a Free Audit</a>
+        <p class="hero__tagline" style="color:var(--accent-purple); background:rgba(139,92,246,0.1);">Digital Solutions</p>
+        <h1 class="hero__headline" style="font-size:3rem;">Future Pilots Digital.</h1>
+        <p class="hero__sub" style="max-width:640px;">Smart SEO, AI-powered digital marketing, and full-stack development for educational institutions and growing businesses. More visibility. More traffic. More leads.</p>
+        <div class="hero__ctas">
+          <a href="/contact.html" class="btn btn--primary">Get a Free Audit</a>
+          <a href="/pricing.html" class="btn btn--outline">View SEO Packages →</a>
         </div>
       </div>
     </section>
 
-    <!-- Services Grid -->
-    <section class="section bg-grid" style="background:var(--ink-2);">
+    <section class="section">
       <div class="container">
         <div class="section__header js-stagger">
-          <span class="section__label">Our Services</span>
-          <h2 class="section__title">Everything You Need<br>to Grow Online.</h2>
-          <p class="section__sub">From technical SEO to AI-powered automation — we cover the full digital growth stack.</p>
+          <span class="section__label">What We Offer</span>
+          <h2 class="section__title">Complete Digital Growth Solutions.</h2>
+          <p class="section__sub">From building your foundation to scaling your reach — we cover the full digital growth journey.</p>
         </div>
-        <div class="digital__services-grid js-stagger">
-          <div class="digital__service-item">
-            <div class="digital__service-icon">🌐</div>
-            <div>
-              <div class="digital__service-name">Website & Web App Development</div>
-              <div class="digital__service-desc">Fast, modern, SEO-optimized websites built with the latest tech stack.</div>
-            </div>
+
+        <div class="feature-row js-stagger">
+          <div class="feature-row__img">
+            <img src="https://images.unsplash.com/photo-1562577309-2592ab84b1bc?q=80&w=900&auto=format&fit=crop" alt="SEO and digital marketing" />
           </div>
-          <div class="digital__service-item">
-            <div class="digital__service-icon">📱</div>
-            <div>
-              <div class="digital__service-name">Mobile Application Engineering</div>
-              <div class="digital__service-desc">Native and cross-platform apps that delight users and convert.</div>
-            </div>
+          <div class="feature-row__content">
+            <span class="feature-row__tag">SEO &amp; Digital Marketing</span>
+            <h3 class="feature-row__title">Get Found Online. Grow Fast.</h3>
+            <p class="feature-row__desc">We deliver smart, data-driven SEO strategies that increase your rankings, drive qualified traffic, and generate real leads — not just vanity metrics.</p>
+            <ul class="feature-checklist">
+              <li>Keyword Research &amp; On-Page SEO</li>
+              <li>Advanced Content Strategy (Blogs / Articles)</li>
+              <li>Social Media Post Creation with Better Design</li>
+              <li>Backlink Building &amp; Domain Authority Growth</li>
+              <li>Competitor Analysis &amp; Monthly Reports</li>
+              <li>Local SEO &amp; Google Business Optimization</li>
+            </ul>
+            <a href="/pricing.html" class="btn btn--primary">See SEO Packages</a>
           </div>
-          <div class="digital__service-item">
-            <div class="digital__service-icon">📈</div>
-            <div>
-              <div class="digital__service-name">Advanced SEO & Digital Marketing</div>
-              <div class="digital__service-desc">Data-driven SEO, content marketing, and paid media management.</div>
-            </div>
+        </div>
+
+        <div class="feature-row feature-row--reverse js-stagger" style="border-top:1px solid var(--border-light); margin-top:var(--space-8);">
+          <div class="feature-row__img">
+            <img src="https://images.unsplash.com/photo-1573164713714-d95e436ab8d6?q=80&w=900&auto=format&fit=crop" alt="AI automation" />
           </div>
-          <div class="digital__service-item">
-            <div class="digital__service-icon">🤖</div>
-            <div>
-              <div class="digital__service-name">AI Automation & Conversational Chatbots</div>
-              <div class="digital__service-desc">Custom AI agents and chatbots that handle enquiries 24/7.</div>
-            </div>
+          <div class="feature-row__content">
+            <span class="feature-row__tag">AI Automation</span>
+            <h3 class="feature-row__title">Let AI Work For You 24/7.</h3>
+            <p class="feature-row__desc">From intelligent chatbots to CRM automation and voice agents — we build AI-powered systems that handle routine tasks so your team can focus on growth.</p>
+            <ul class="feature-checklist">
+              <li>AI Chatbot &amp; Conversational Agents</li>
+              <li>Voice Agent Integration</li>
+              <li>CRM Workflow Automation</li>
+              <li>Lead Generation (Inbound Automation)</li>
+              <li>Ads Generation on YouTube, Google &amp; SEO Platforms</li>
+              <li>Conversion Tracking Setup &amp; Analytics</li>
+            </ul>
+            <a href="/contact.html" class="btn btn--primary" style="background:var(--accent-purple); border-color:var(--accent-purple);">Book a Consultation</a>
           </div>
-          <div class="digital__service-item">
-            <div class="digital__service-icon">🎙️</div>
-            <div>
-              <div class="digital__service-name">Voice Agent Integrations</div>
-              <div class="digital__service-desc">AI-powered voice assistants for your business phone and web presence.</div>
-            </div>
+        </div>
+
+        <div class="feature-row js-stagger" style="border-top:1px solid var(--border-light); margin-top:var(--space-8);">
+          <div class="feature-row__img">
+            <img src="https://images.unsplash.com/photo-1547658719-da2b51169166?q=80&w=900&auto=format&fit=crop" alt="Web development" />
           </div>
-          <div class="digital__service-item">
-            <div class="digital__service-icon">⚡</div>
-            <div>
-              <div class="digital__service-name">CRM Workflow Automation</div>
-              <div class="digital__service-desc">Automate lead nurturing, follow-ups, and pipeline management end-to-end.</div>
-            </div>
-          </div>
-          <div class="digital__service-item">
-            <div class="digital__service-icon">☁️</div>
-            <div>
-              <div class="digital__service-name">Cloud Hosting & Maintenance</div>
-              <div class="digital__service-desc">99.9% uptime hosting with ongoing maintenance, updates, and security.</div>
-            </div>
-          </div>
-          <div class="digital__service-item">
-            <div class="digital__service-icon">🎨</div>
-            <div>
-              <div class="digital__service-name">Brand Strategy & Identity</div>
-              <div class="digital__service-desc">Brand positioning, visual identity, and messaging that makes you memorable.</div>
-            </div>
-          </div>
-          <div class="digital__service-item">
-            <div class="digital__service-icon">📊</div>
-            <div>
-              <div class="digital__service-name">Analytics & Reporting</div>
-              <div class="digital__service-desc">Custom dashboards and monthly reports tracking every metric that matters.</div>
-            </div>
+          <div class="feature-row__content">
+            <span class="feature-row__tag">Web &amp; App Development</span>
+            <h3 class="feature-row__title">Premium Digital Presence.</h3>
+            <p class="feature-row__desc">We design and build stunning, high-performance websites and mobile applications that convert visitors into customers — with ongoing maintenance and cloud hosting.</p>
+            <ul class="feature-checklist">
+              <li>Custom Website &amp; Web App Development</li>
+              <li>Mobile Application Engineering (iOS &amp; Android)</li>
+              <li>UI/UX Design &amp; Brand Identity</li>
+              <li>LinkedIn, Instagram &amp; Social Media Profile Generation</li>
+              <li>Branding &amp; Profile Optimization</li>
+              <li>Cloud Hosting, Maintenance &amp; 24/7 Support</li>
+            </ul>
+            <a href="/contact.html" class="btn btn--primary">Get Your Website Built</a>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Stats -->
-    <section class="section bg-grid">
+    <section class="section section--alt">
       <div class="container">
         <div class="section__header js-stagger">
-          <span class="section__label">Proven Results</span>
-          <h2 class="section__title">Numbers That Speak.</h2>
+          <span class="section__label">SEO Pricing</span>
+          <h2 class="section__title">Smart SEO Packages for Every Stage.</h2>
+          <p class="section__sub">From building your digital foundation to advanced lead generation — choose the plan that fits your goals.</p>
         </div>
-        <div class="trust__stats js-stagger" style="gap:0;">
-          <div class="trust__stat" data-count="340" data-suffix="%">
-            <span class="trust__stat-number" style="color:var(--brand-teal);" data-counter>0%</span>
-            <span class="trust__stat-label">Avg. Traffic Increase</span>
+        <div class="seo__cards js-stagger">
+          <div class="seo__card">
+            <div class="seo__card-name">Setup Package</div>
+            <div class="seo__card-subtitle">Complete Foundation</div>
+            <div class="seo__card-price">₹15,000</div>
+            <div class="seo__card-period">One-Time Payment</div>
+            <ul class="seo__feature-list">
+              <li>LinkedIn, Instagram + social media profile generation</li>
+              <li>Content for first month</li>
+              <li>Branding &amp; profile optimization</li>
+              <li>Bio, description &amp; keyword setup</li>
+              <li>Contact &amp; lead form setup</li>
+              <li>1 Month content calendar</li>
+              <li>15 Social media creatives</li>
+            </ul>
+            <a href="/contact.html" class="btn btn--outline btn--full">Get Started</a>
           </div>
-          <div class="trust__stat" data-count="90" data-suffix="%">
-            <span class="trust__stat-number" data-counter>0%</span>
-            <span class="trust__stat-label">Client Retention Rate</span>
+          <div class="seo__card">
+            <div class="seo__card-name">Starter Package</div>
+            <div class="seo__card-subtitle">Ideal for New Businesses</div>
+            <div class="seo__card-price">₹8,000</div>
+            <div class="seo__card-period">per month</div>
+            <ul class="seo__feature-list">
+              <li>Basic page creation</li>
+              <li>Normal content (Articles / Posts)</li>
+              <li>Post making (Social Media)</li>
+              <li>Basic on-page SEO</li>
+              <li>Keyword research (Basic)</li>
+              <li>Google Business updates</li>
+              <li>Monthly posting schedule</li>
+              <li>Monthly performance summary</li>
+            </ul>
+            <a href="/contact.html" class="btn btn--outline btn--full">Get Started</a>
           </div>
-          <div class="trust__stat" data-count="3" data-suffix="x">
-            <span class="trust__stat-number" style="color:var(--brand-orange);" data-counter>0x</span>
-            <span class="trust__stat-label">Average Lead Increase</span>
+          <div class="seo__card seo__card--popular">
+            <div class="seo__card-name">Growth Package</div>
+            <div class="seo__card-subtitle">Best Value for Rankings</div>
+            <div class="seo__card-price" style="color:var(--accent-teal);">₹11,000</div>
+            <div class="seo__card-period">per month</div>
+            <ul class="seo__feature-list">
+              <li>Everything in Starter Package</li>
+              <li>Advanced content (Blogs / Articles)</li>
+              <li>Social media posts with better design</li>
+              <li>Advanced on-page SEO</li>
+              <li>Keyword research (Advanced)</li>
+              <li>Monthly detailed report</li>
+              <li>Competitor analysis (Basic)</li>
+              <li>Backlink building (Basic)</li>
+              <li>Content strategy planning</li>
+              <li>Local SEO optimization</li>
+            </ul>
+            <a href="/contact.html" class="btn btn--primary btn--full" style="background:var(--accent-teal); border-color:var(--accent-teal);">Get Started</a>
           </div>
-          <div class="trust__stat" data-count="48" data-suffix="h">
-            <span class="trust__stat-number" data-counter>0h</span>
-            <span class="trust__stat-label">Avg. Onboarding Time</span>
+          <div class="seo__card">
+            <div class="seo__card-name">Premium Package</div>
+            <div class="seo__card-subtitle">Complete Growth &amp; Leads</div>
+            <div class="seo__card-price">₹14,000</div>
+            <div class="seo__card-period">per month</div>
+            <ul class="seo__feature-list">
+              <li>Everything in Growth Package</li>
+              <li>Ads generation on YouTube, Google &amp; SEO platforms</li>
+              <li>Higher report (Detailed Analysis)</li>
+              <li>Students interest tracking from ads</li>
+              <li>Marketing suggestions</li>
+              <li>Lead generation (Inbound)</li>
+              <li>Conversion tracking setup</li>
+              <li>Priority support &amp; consultation</li>
+            </ul>
+            <a href="/contact.html" class="btn btn--outline btn--full">Get Started</a>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- CTA -->
-    <section class="section cta-section bg-grid" style="background:var(--ink-2);">
-      <div class="glow-orb glow-orb--teal" style="width:400px;height:400px;top:50%;left:50%;transform:translate(-50%,-50%);"></div>
-      <div class="container js-stagger">
-        <div class="cta-section__inner">
-          <span class="section__label" style="justify-content:center; margin-bottom:var(--space-6);">Start Growing</span>
-          <h2 class="cta-section__title">Ready for <span style="background:var(--gradient-teal);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">Digital Growth?</span></h2>
-          <p class="section__sub" style="margin:var(--space-4) auto var(--space-8);">Get a free audit of your current online presence and a custom growth roadmap — no commitment required.</p>
-          <div class="hero__ctas" style="justify-content:center;">
-            <a href="/pricing.html" class="btn btn--primary" style="font-size:var(--text-md);">View Service Packages →</a>
-            <a href="/contact.html" class="btn btn--ghost" style="font-size:var(--text-md);">Free Audit Call</a>
+    <section class="section">
+      <div class="container">
+        <div class="section__header js-stagger">
+          <span class="section__label">Our Approach</span>
+          <h2 class="section__title">How We Grow Your Business.</h2>
+        </div>
+        <div class="approach__steps js-stagger">
+          <div class="approach__step">
+            <div class="approach__step-icon">🔍</div>
+            <div class="approach__step-title">Keyword Research</div>
+            <div class="approach__step-desc">Identify high-value keywords your audience is searching for</div>
+          </div>
+          <div class="approach__step">
+            <div class="approach__step-icon">📄</div>
+            <div class="approach__step-title">On-Page Optimization</div>
+            <div class="approach__step-desc">Optimize every page for search engines and conversions</div>
+          </div>
+          <div class="approach__step">
+            <div class="approach__step-icon">🔗</div>
+            <div class="approach__step-title">Quality Backlinks</div>
+            <div class="approach__step-desc">Build domain authority through high-quality link building</div>
+          </div>
+          <div class="approach__step">
+            <div class="approach__step-icon">📊</div>
+            <div class="approach__step-title">Content Strategy</div>
+            <div class="approach__step-desc">Consistent, SEO-optimized content that builds trust and rankings</div>
+          </div>
+          <div class="approach__step">
+            <div class="approach__step-icon">📈</div>
+            <div class="approach__step-title">Ranking Growth</div>
+            <div class="approach__step-desc">More traffic, more leads, and measurable business growth</div>
           </div>
         </div>
       </div>
     </section>
-  </main>
 
+    <section class="cta-banner">
+      <div class="container cta-banner__inner js-stagger">
+        <div class="cta-banner__label">Let's Grow Together</div>
+        <h2 class="cta-banner__title">Get a Free Digital Audit.</h2>
+        <p class="cta-banner__sub">We'll analyse your current digital presence and show you exactly where the biggest growth opportunities are — for free.</p>
+        <div class="cta-banner__actions">
+          <a href="/contact.html" class="btn btn--primary">Request a Free Audit</a>
+          <a href="/pricing.html" class="btn btn--outline" style="color:white; border-color:rgba(255,255,255,0.3);">See All Packages</a>
+        </div>
+        <div class="cta-banner__contact">
+          <a href="tel:+916261072872" class="cta-banner__contact-item">📞 +91 62610 72872</a>
+          <a href="mailto:hr.futurepilot@gmail.com" class="cta-banner__contact-item">✉️ hr.futurepilot@gmail.com</a>
+        </div>
+      </div>
+    </section>
+    
+</main>
+
+  <!-- ===== FOOTER ===== -->
   <footer id="footer" class="footer">
     <div class="container">
       <div class="footer__grid">
         <div class="footer__brand">
           <span class="footer__name">Future Pilots</span>
-          <p class="footer__tagline">Transforming students from learners to innovators.</p>
+          <p class="footer__tagline">Transforming students from learners to innovators. Building tomorrow's technologists, one workshop at a time.</p>
+          <div class="footer__social">
+            <a href="tel:+916261072872" class="footer__social-btn" title="Call us">📞</a>
+            <a href="mailto:hr.futurepilot@gmail.com" class="footer__social-btn" title="Email us">✉️</a>
+          </div>
         </div>
         <div class="footer__links">
           <h4>Quick Links</h4>
@@ -184,12 +278,13 @@
             <li><a href="/about.html">About Us</a></li>
             <li><a href="/pricing.html">Pricing</a></li>
             <li><a href="/team.html">Our Team</a></li>
+            <li><a href="/contact.html">Contact</a></li>
           </ul>
         </div>
         <div class="footer__links">
           <h4>Services</h4>
           <ul>
-            <li><a href="/education.html">Education</a></li>
+            <li><a href="/education.html">Education Workshops</a></li>
             <li><a href="/digital.html">Digital Solutions</a></li>
             <li><a href="/contact.html">Book Workshop</a></li>
           </ul>
@@ -204,6 +299,7 @@
       </div>
       <div class="footer__bottom">
         <span class="footer__copyright">© 2026 Future Pilots. All rights reserved.</span>
+        <span class="footer__copyright">Empowering India's next generation of innovators.</span>
       </div>
     </div>
   </footer>

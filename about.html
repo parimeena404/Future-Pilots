@@ -3,17 +3,22 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>About Future Pilots — Shaping India's Future Innovators</title>
-  <meta name="description" content="Future Pilots believes in shifting education from memorisation toward curiosity, experimentation, and real-world application. Learn our vision, mission, and team." />
+  <title>Future Pilots — EdTech & Digital Solutions for Schools</title>
+  <meta name="description" content="Future Pilots delivers premium hands-on STEM workshops and digital marketing solutions for schools, coaching institutes, and businesses across India. AI, Robotics, EV, Cybersecurity and more." />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="/src/styles/main.css">
 </head>
 <body>
+
+  <!-- Custom Cursor -->
   <div id="fp-cursor"></div>
   <div id="fp-cursor-ring"></div>
+
+  <!-- Scroll Progress Bar -->
   <div id="fp-progress"></div>
 
+  <!-- ===== HEADER ===== -->
   <header class="header">
     <div class="container header__inner">
       <a href="/" class="header__logo">
@@ -29,73 +34,152 @@
       </nav>
       <div class="header__actions">
         <a href="/contact.html" class="btn btn--primary btn--sm">Book a Call</a>
-        <button id="mobile-nav-toggle" class="mobile-toggle" aria-expanded="false">☰</button>
+        <button id="mobile-nav-toggle" class="mobile-toggle" aria-expanded="false" aria-label="Toggle navigation">☰</button>
       </div>
     </div>
   </header>
 
   <main id="main-content" class="main-content">
 
-    <!-- Page Hero -->
-    <section class="section bg-grid" style="background:var(--gradient-hero); padding:var(--space-32) 0 var(--space-24); overflow:hidden;">
-      <div class="glow-orb glow-orb--violet" style="width:600px;height:600px;top:-200px;right:-200px;"></div>
-      <div class="container section__header js-stagger" style="position:relative;z-index:2;">
-        <span class="section__label">About Future Pilots</span>
-        <h1 class="section__title" style="font-size:clamp(3rem,8vw,6rem);">Shaping the<br><span class="gradient-text">Future of Education.</span></h1>
-        <p class="section__sub" style="max-width:620px;">We believe in shifting education from memorisation toward curiosity, experimentation, and real-world application.</p>
+    <section class="section section--hero" style="padding-bottom:var(--space-12);">
+      <div class="shape shape--blob1 shape--orange" style="width:300px;height:300px;top:-60px;left:-80px;"></div>
+      <div class="shape shape--blob2 shape--purple" style="width:400px;height:400px;bottom:-80px;right:-100px;"></div>
+      <div class="container js-stagger" style="position:relative;z-index:2;">
+        <p class="hero__tagline" style="color:var(--accent-teal); background:rgba(13,148,136,0.1);">About Us</p>
+        <h1 class="hero__headline" style="font-size:3rem;">Shaping the Future<br/>of Education.</h1>
+        <p class="hero__sub" style="max-width:620px;">Future Pilots was founded with a single belief — every student deserves access to the skills that will define the future. We bring the innovation economy into the classroom.</p>
       </div>
     </section>
 
-    <!-- Vision & Mission -->
-    <section class="section bg-grid" style="background:var(--ink-2);">
+    <section class="section section--alt" style="padding-top:0; margin-top:-1px;">
       <div class="container">
-        <div class="grid-2 js-stagger">
-          <div class="card" data-tilt>
-            <div style="font-size:2.5rem; margin-bottom:var(--space-4);">🔭</div>
-            <h3 style="font-size:var(--text-2xl); margin-bottom:var(--space-4); color:var(--brand-orange);">Our Vision</h3>
-            <p style="font-size:var(--text-base); line-height:var(--leading-normal);">We believe in shifting education from memorisation toward curiosity, experimentation, and real-world application. Our vision is to introduce emerging technologies, innovation-driven thinking, and industry-relevant skills at an early stage — creating a generation of confident, capable innovators.</p>
+        <div class="stat-row js-stagger">
+          <div class="stat-row__item"><span class="stat-row__number" style="color:var(--accent-orange);">500+</span><span class="stat-row__label">Students Trained</span></div>
+          <div class="stat-row__item"><span class="stat-row__number">50+</span><span class="stat-row__label">Workshops Conducted</span></div>
+          <div class="stat-row__item"><span class="stat-row__number" style="color:var(--accent-teal);">25+</span><span class="stat-row__label">Partner Schools</span></div>
+          <div class="stat-row__item"><span class="stat-row__number">15+</span><span class="stat-row__label">Curriculum Tracks</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="feature-row js-stagger">
+          <div class="feature-row__img">
+            <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?q=80&w=900&auto=format&fit=crop" alt="Vision" />
           </div>
-          <div class="card" data-tilt>
-            <div style="font-size:2.5rem; margin-bottom:var(--space-4);">🎯</div>
-            <h3 style="font-size:var(--text-2xl); margin-bottom:var(--space-4); color:var(--brand-teal);">Our Mission</h3>
-            <p style="font-size:var(--text-base); line-height:var(--leading-normal);">To deliver engaging, hands-on, experiential learning that exposes students to emerging technologies, innovation, entrepreneurship, leadership, and future career pathways — building true innovators who are ready to shape tomorrow's world.</p>
+          <div class="feature-row__content">
+            <span class="feature-row__tag">Our Vision</span>
+            <h2 class="feature-row__title">Learners to Innovators.</h2>
+            <p class="feature-row__desc">We believe education should shift from memorisation toward curiosity, experimentation, and real-world application. By introducing emerging technologies and innovation-driven thinking at an early stage, we unlock every student's potential to become a future creator.</p>
+            <ul class="feature-checklist">
+              <li>Move beyond textbooks to real-world projects</li>
+              <li>Develop innovation and problem-solving mindset</li>
+              <li>Expose students to industry-relevant technologies</li>
+              <li>Build confidence through hands-on achievement</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="feature-row feature-row--reverse js-stagger" style="border-top:1px solid var(--border-light); margin-top:var(--space-8);">
+          <div class="feature-row__img">
+            <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=900&auto=format&fit=crop" alt="Mission" />
+          </div>
+          <div class="feature-row__content">
+            <span class="feature-row__tag">Our Mission</span>
+            <h2 class="feature-row__title">Build Future-Ready Innovators.</h2>
+            <p class="feature-row__desc">To deliver engaging, hands-on, experiential learning that exposes students to emerging technologies, innovation, entrepreneurship, leadership, and future career pathways — building innovators and lifelong learners.</p>
+            <ul class="feature-checklist">
+              <li>Deliver engaging experiential learning sessions</li>
+              <li>Expose students to future career pathways</li>
+              <li>Build entrepreneurship and leadership skills</li>
+              <li>Create lifelong learners and innovators</li>
+            </ul>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Team -->
-    <section class="section bg-grid">
+    <section class="section section--alt">
       <div class="container">
         <div class="section__header js-stagger">
-          <span class="section__label">The Team</span>
-          <h2 class="section__title">Meet the Visionaries.</h2>
-          <p class="section__sub">Four leaders, one shared obsession: making education extraordinary.</p>
+          <span class="section__label">Why Choose Us</span>
+          <h2 class="section__title">What Makes Us Different.</h2>
+        </div>
+        <div class="grid-3 js-stagger">
+          <div class="card">
+            <div style="font-size:2.5rem; margin-bottom:var(--space-4);">🏆</div>
+            <h3 style="font-weight:700; margin-bottom:var(--space-3);">National Innovation Champions</h3>
+            <p style="color:var(--text-secondary); font-size:var(--text-sm); line-height:1.6;">Our programs produce students who compete and win at national-level innovation and technology competitions.</p>
+          </div>
+          <div class="card">
+            <div style="font-size:2.5rem; margin-bottom:var(--space-4);">👨‍🏫</div>
+            <h3 style="font-weight:700; margin-bottom:var(--space-3);">Industry-Vetted Mentors</h3>
+            <p style="color:var(--text-secondary); font-size:var(--text-sm); line-height:1.6;">Every mentor is carefully vetted by industry experts to ensure students receive the highest quality guidance.</p>
+          </div>
+          <div class="card">
+            <div style="font-size:2.5rem; margin-bottom:var(--space-4);">⚡</div>
+            <h3 style="font-weight:700; margin-bottom:var(--space-3);">Zero Operational Hassle</h3>
+            <p style="color:var(--text-secondary); font-size:var(--text-sm); line-height:1.6;">We handle everything — equipment, curriculum, mentors, and logistics. Schools simply provide the space and students.</p>
+          </div>
+          <div class="card">
+            <div style="font-size:2.5rem; margin-bottom:var(--space-4);">📜</div>
+            <h3 style="font-weight:700; margin-bottom:var(--space-3);">Certificate + Prizes</h3>
+            <p style="color:var(--text-secondary); font-size:var(--text-sm); line-height:1.6;">Every participant receives a certificate. Premium workshops include prizes and special recognition for top performers.</p>
+          </div>
+          <div class="card">
+            <div style="font-size:2.5rem; margin-bottom:var(--space-4);">🎓</div>
+            <h3 style="font-weight:700; margin-bottom:var(--space-3);">Student Friendly Design</h3>
+            <p style="color:var(--text-secondary); font-size:var(--text-sm); line-height:1.6;">No prerequisite knowledge required. Our programs are specifically designed for students in Classes 8–12.</p>
+          </div>
+          <div class="card">
+            <div style="font-size:2.5rem; margin-bottom:var(--space-4);">🌐</div>
+            <h3 style="font-weight:700; margin-bottom:var(--space-3);">Proven Across India</h3>
+            <p style="color:var(--text-secondary); font-size:var(--text-sm); line-height:1.6;">Trusted by CBSE, ICSE, and State Board schools and coaching institutes across the country.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section__header js-stagger">
+          <span class="section__label">Our Team</span>
+          <h2 class="section__title">Meet the People Behind the Mission.</h2>
         </div>
         <div id="team-grid" class="team__grid js-stagger"></div>
       </div>
     </section>
 
-    <!-- CTA -->
-    <section class="section cta-section bg-grid" style="background:var(--ink-2);">
-      <div class="glow-orb glow-orb--orange" style="width:400px;height:400px;top:50%;left:50%;transform:translate(-50%,-50%);"></div>
-      <div class="container js-stagger">
-        <div class="cta-section__inner">
-          <span class="section__label" style="justify-content:center; margin-bottom:var(--space-6);">Work With Us</span>
-          <h2 class="cta-section__title">Ready to Bring Future Pilots<br><span class="gradient-text">to Your School?</span></h2>
-          <p class="section__sub" style="margin:var(--space-4) auto var(--space-8);">Book a free consultation and we'll design a workshop program perfect for your institution.</p>
-          <a href="/contact.html" class="btn btn--primary" style="font-size:var(--text-md);">Book Free Consultation →</a>
+    <section class="cta-banner">
+      <div class="container cta-banner__inner js-stagger">
+        <div class="cta-banner__label">Partner With Us</div>
+        <h2 class="cta-banner__title">Bring Future Pilots to Your School.</h2>
+        <p class="cta-banner__sub">Let's schedule a free consultation to discuss how we can design the perfect workshop experience for your students.</p>
+        <div class="cta-banner__actions">
+          <a href="/contact.html" class="btn btn--primary">Book a Free Consultation</a>
+          <a href="/pricing.html" class="btn btn--outline" style="color:white; border-color:rgba(255,255,255,0.3);">View Pricing Plans</a>
+        </div>
+        <div class="cta-banner__contact">
+          <a href="tel:+916261072872" class="cta-banner__contact-item">📞 +91 62610 72872</a>
+          <a href="mailto:hr.futurepilot@gmail.com" class="cta-banner__contact-item">✉️ hr.futurepilot@gmail.com</a>
         </div>
       </div>
     </section>
-  </main>
+    
+</main>
 
+  <!-- ===== FOOTER ===== -->
   <footer id="footer" class="footer">
     <div class="container">
       <div class="footer__grid">
         <div class="footer__brand">
           <span class="footer__name">Future Pilots</span>
-          <p class="footer__tagline">Transforming students from learners to innovators.</p>
+          <p class="footer__tagline">Transforming students from learners to innovators. Building tomorrow's technologists, one workshop at a time.</p>
+          <div class="footer__social">
+            <a href="tel:+916261072872" class="footer__social-btn" title="Call us">📞</a>
+            <a href="mailto:hr.futurepilot@gmail.com" class="footer__social-btn" title="Email us">✉️</a>
+          </div>
         </div>
         <div class="footer__links">
           <h4>Quick Links</h4>
@@ -103,12 +187,13 @@
             <li><a href="/about.html">About Us</a></li>
             <li><a href="/pricing.html">Pricing</a></li>
             <li><a href="/team.html">Our Team</a></li>
+            <li><a href="/contact.html">Contact</a></li>
           </ul>
         </div>
         <div class="footer__links">
           <h4>Services</h4>
           <ul>
-            <li><a href="/education.html">Education</a></li>
+            <li><a href="/education.html">Education Workshops</a></li>
             <li><a href="/digital.html">Digital Solutions</a></li>
             <li><a href="/contact.html">Book Workshop</a></li>
           </ul>
@@ -123,6 +208,7 @@
       </div>
       <div class="footer__bottom">
         <span class="footer__copyright">© 2026 Future Pilots. All rights reserved.</span>
+        <span class="footer__copyright">Empowering India's next generation of innovators.</span>
       </div>
     </div>
   </footer>
