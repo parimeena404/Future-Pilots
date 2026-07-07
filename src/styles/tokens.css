@@ -1,84 +1,118 @@
 /* ============================================
-   DESIGN TOKENS — Future Pilots (EdTech Standard)
-   Clean, bright, high-contrast palette
+   DESIGN TOKENS — Future Pilots PREMIUM
+   Dark-first · Editorial · Awwwards-quality
    ============================================ */
 :root {
-  /* ---- Base Colors (Premium B2B) ---- */
-  --bg-primary: #FFFFFF;
-  --bg-secondary: #F8F7F4; /* Soft cream */
-  --bg-dark: #0F172A; /* Deep Navy */
-  --bg-elevated: #FFFFFF;
 
-  /* ---- Brand / Accent Colors ---- */
-  --accent-orange: #F97316;
-  --accent-teal: #0D9488;
-  --accent-purple: #8B5CF6;
-  
-  --accent-primary: var(--accent-orange);
-  --accent-primary-hover: #EA580C;
-  
+  /* ---- Core Dark Palette ---- */
+  --ink:        #08080E;   /* Page background — deep space */
+  --ink-2:      #0F0F1A;   /* Card surfaces */
+  --ink-3:      #161625;   /* Elevated cards */
+  --ink-4:      #1E1E30;   /* Hover states */
+  --ink-border: rgba(255, 255, 255, 0.07);
+  --ink-border-bright: rgba(255, 255, 255, 0.14);
+
+  /* ---- Brand Accents ---- */
+  --brand-orange:      #FF6B35;
+  --brand-orange-glow: rgba(255, 107, 53, 0.3);
+  --brand-gold:        #F5A623;
+  --brand-gold-glow:   rgba(245, 166, 35, 0.2);
+  --brand-teal:        #00D4AA;
+  --brand-teal-glow:   rgba(0, 212, 170, 0.2);
+  --brand-violet:      #8B5CF6;
+  --brand-violet-glow: rgba(139, 92, 246, 0.2);
+
+  /* Semantic aliases */
+  --accent-primary:       var(--brand-orange);
+  --accent-primary-glow:  var(--brand-orange-glow);
+  --accent-primary-hover: #e8562a;
+  --accent-teal:          var(--brand-teal);
+  --accent-orange:        var(--brand-orange);
+  --accent-purple:        var(--brand-violet);
+
   /* ---- Text ---- */
-  --text-primary: #0F172A; /* Deep Navy */
-  --text-secondary: #475569;
-  --text-tertiary: #94A3B8;
-  --text-inverse: #FFFFFF;
+  --text-primary:   #FFFFFF;
+  --text-secondary: rgba(255, 255, 255, 0.6);
+  --text-tertiary:  rgba(255, 255, 255, 0.35);
+  --text-inverse:   #FFFFFF;
 
-  /* ---- Borders / UI Elements ---- */
-  --border-light: #F1F5F9;
-  --border-strong: #E2E8F0;
-  
-  /* ---- Shadows (Ultra Soft) ---- */
-  --shadow-sm: 0 4px 20px rgba(15, 23, 42, 0.03);
-  --shadow-md: 0 10px 40px rgba(15, 23, 42, 0.06);
-  --shadow-lg: 0 20px 60px rgba(15, 23, 42, 0.08);
+  /* Legacy bg aliases for compatibility */
+  --bg-primary:   var(--ink);
+  --bg-secondary: var(--ink-2);
+  --bg-elevated:  var(--ink-3);
+  --bg-dark:      var(--ink);
 
-  /* ---- Typography Scale ---- */
-  --font-display: 'Plus Jakarta Sans', system-ui, sans-serif;
-  --font-body: 'Plus Jakarta Sans', system-ui, sans-serif;
-  --font-mono: 'JetBrains Mono', 'Fira Code', monospace;
+  /* ---- Borders ---- */
+  --border-light:  var(--ink-border);
+  --border-strong: var(--ink-border-bright);
 
-  --text-xs: 0.75rem;
-  --text-sm: 0.875rem;
-  --text-base: 1rem;
-  --text-md: 1.125rem;
-  --text-lg: 1.25rem;
-  --text-xl: 1.5rem;
-  --text-2xl: 2rem;
-  --text-3xl: 2.5rem;
-  --text-4xl: 3rem;
+  /* ---- Shadows → Glows ---- */
+  --shadow-sm: 0 0 0 1px var(--ink-border), 0 4px 16px rgba(0,0,0,0.4);
+  --shadow-md: 0 0 0 1px var(--ink-border), 0 8px 32px rgba(0,0,0,0.5);
+  --shadow-lg: 0 0 0 1px var(--ink-border), 0 16px 60px rgba(0,0,0,0.6);
 
-  --leading-tight: 1.1;
-  --leading-snug: 1.3;
-  --leading-normal: 1.5;
-  --tracking-tight: -0.02em;
+  /* ---- Gradients ---- */
+  --gradient-orange: linear-gradient(135deg, #FF6B35 0%, #F5A623 100%);
+  --gradient-teal:   linear-gradient(135deg, #00D4AA 0%, #0090FF 100%);
+  --gradient-violet: linear-gradient(135deg, #8B5CF6 0%, #EC4899 100%);
+  --gradient-hero:   radial-gradient(ellipse 80% 60% at 50% -10%, rgba(255, 107, 53, 0.18) 0%, transparent 60%),
+                     radial-gradient(ellipse 60% 50% at 80% 50%, rgba(0, 212, 170, 0.08) 0%, transparent 60%),
+                     var(--ink);
+
+  /* ---- Typography ---- */
+  --font-display: 'Outfit', 'Plus Jakarta Sans', system-ui, sans-serif;
+  --font-body:    'Inter', 'Plus Jakarta Sans', system-ui, sans-serif;
+  --font-mono:    'JetBrains Mono', 'Fira Code', monospace;
+
+  --text-xs:   0.75rem;    /* 12px */
+  --text-sm:   0.875rem;   /* 14px */
+  --text-base: 1rem;       /* 16px */
+  --text-md:   1.125rem;   /* 18px */
+  --text-lg:   1.25rem;    /* 20px */
+  --text-xl:   1.5rem;     /* 24px */
+  --text-2xl:  2rem;       /* 32px */
+  --text-3xl:  2.5rem;     /* 40px */
+  --text-4xl:  3.25rem;    /* 52px */
+  --text-5xl:  4.5rem;     /* 72px */
+  --text-6xl:  6rem;       /* 96px */
+
+  --leading-tight:  1.05;
+  --leading-snug:   1.25;
+  --leading-normal: 1.6;
+  --tracking-tight: -0.03em;
+  --tracking-tighter: -0.04em;
   --tracking-normal: 0;
-  --tracking-wide: 0.025em;
+  --tracking-wide:  0.06em;
 
   /* ---- Spacing (4px base) ---- */
-  --space-1: 0.25rem;   /* 4px */
-  --space-2: 0.5rem;    /* 8px */
-  --space-3: 0.75rem;   /* 12px */
-  --space-4: 1rem;      /* 16px */
-  --space-6: 1.5rem;    /* 24px */
-  --space-8: 2rem;      /* 32px */
-  --space-10: 2.5rem;   /* 40px */
-  --space-12: 3rem;     /* 48px */
-  --space-16: 4rem;     /* 64px */
-  --space-20: 5rem;     /* 80px */
-  --space-24: 6rem;     /* 96px */
+  --space-1:  0.25rem;
+  --space-2:  0.5rem;
+  --space-3:  0.75rem;
+  --space-4:  1rem;
+  --space-5:  1.25rem;
+  --space-6:  1.5rem;
+  --space-8:  2rem;
+  --space-10: 2.5rem;
+  --space-12: 3rem;
+  --space-16: 4rem;
+  --space-20: 5rem;
+  --space-24: 6rem;
+  --space-32: 8rem;
 
   /* ---- Borders / Radius ---- */
-  --radius-sm: 4px;
-  --radius-md: 8px;
-  --radius-lg: 12px;
+  --radius-sm:   6px;
+  --radius-md:   12px;
+  --radius-lg:   20px;
+  --radius-xl:   28px;
   --radius-full: 9999px;
 
   /* ---- Layout ---- */
   --header-height: 72px;
   --container-max: 1200px;
 
-  /* ---- Z-index layers ---- */
+  /* ---- Z-index ---- */
+  --z-cursor:  999;
+  --z-modal:   500;
+  --z-header:  100;
   --z-content: 2;
-  --z-header: 100;
-  --z-modal: 200;
 }

@@ -1,6 +1,10 @@
 /* ============================================
    MAIN CSS — Import Order Matters
    ============================================ */
+
+/* Google Fonts — Outfit (display) + Inter (body) */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700&display=swap');
+
 @import './tokens.css';
 @import './reset.css';
 @import './typography.css';

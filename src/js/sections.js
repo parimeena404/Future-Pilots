@@ -108,17 +108,26 @@ export function renderTeam() {
 
 export function renderTestimonials() {
   const track = document.getElementById('testimonials-track');
+  const nav   = document.getElementById('testimonials-nav');
   if (!track) return;
 
   track.innerHTML = testimonialsData.map(t => `
-    <div class="card testimonial__card">
+    <div class="testimonials__card">
       <p class="testimonial__quote">${t.quote}</p>
-      <div style="margin-top:16px;">
-        <span class="testimonial__author" style="font-weight:600; display:block;">${t.author}</span>
-        <span class="testimonial__role" style="font-size:var(--text-sm); color:var(--text-secondary);">${t.role}</span>
+      <div style="margin-top:var(--space-6);">
+        <span class="testimonial__author">${t.author}</span>
+        <span class="testimonial__role">${t.role}</span>
       </div>
     </div>
   `).join('');
+
+  // Generate dots — one per pair of cards
+  if (nav) {
+    const total = Math.ceil(testimonialsData.length / 2);
+    nav.innerHTML = Array.from({ length: total }, (_, i) =>
+      `<button class="testimonials__dot${i === 0 ? ' active' : ''}" data-idx="${i}" aria-label="Go to slide ${i+1}"></button>`
+    ).join('');
+  }
 }
 
 export function renderFAQ() {

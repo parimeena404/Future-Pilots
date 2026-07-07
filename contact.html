@@ -3,23 +3,24 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Future Pilots — EdTech & Digital Solutions</title>
-  
+  <title>Book a Consultation — Future Pilots</title>
+  <meta name="description" content="Get in touch with Future Pilots. Book a workshop for your school or request a premium SEO/digital growth consultation." />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/src/styles/main.css">
 </head>
 <body>
+  <div id="fp-cursor"></div>
+  <div id="fp-cursor-ring"></div>
+  <div id="fp-progress"></div>
 
-  <!-- Top Navigation Header -->
+  <!-- Header -->
   <header class="header">
     <div class="container header__inner">
       <a href="/" class="header__logo">
         <svg viewBox="0 0 40 40" fill="none"><path d="M6 34L34 20L6 6V18L26 20L6 22V34Z" fill="currentColor"/></svg>
         Future Pilots
       </a>
-      
       <nav id="top-nav-links" class="header__nav">
         <a href="/" class="header__link">Home</a>
         <a href="/about.html" class="header__link">About</a>
@@ -27,79 +28,112 @@
         <a href="/digital.html" class="header__link">Digital</a>
         <a href="/pricing.html" class="header__link">Pricing</a>
       </nav>
-      
       <div class="header__actions">
-        <a href="/contact.html" class="btn btn--primary btn--sm">Contact Us</a>
-        <button id="mobile-nav-toggle" class="mobile-toggle" aria-expanded="false">
-          ☰
-        </button>
+        <a href="/contact.html" class="btn btn--primary btn--sm">Book a Call</a>
+        <button id="mobile-nav-toggle" class="mobile-toggle" aria-expanded="false">☰</button>
       </div>
     </div>
   </header>
 
-  <!-- Main Content -->
   <main id="main-content" class="main-content">
 
-    <section class="section section--alt">
-      <div class="shape shape--blob2 shape--orange" style="width:600px; height:600px; top:-200px; left:-200px;"></div>
-      <div class="container section__header js-stagger">
-        <p class="section__label">Get in Touch</p>
-        <h1 class="section__title">Book a Consultation</h1>
-      </div>
-      <div class="container js-stagger" style="max-width:600px;">
-        <form class="card" id="contact-form" style="position:relative; z-index:2; background:rgba(255,255,255,0.95); backdrop-filter:blur(20px);">
-          <div style="margin-bottom:20px;">
-            <label style="display:block; margin-bottom:8px; font-weight:600; color:var(--text-secondary);">Full Name</label>
-            <input type="text" style="width:100%; padding:14px; border:1px solid var(--border-strong); border-radius:12px;" required>
+    <section class="section bg-grid" style="background:var(--gradient-hero); padding:var(--space-24) 0; overflow:hidden;">
+      <div class="glow-orb glow-orb--orange" style="width:500px; height:500px; top:-100px; left:-100px;"></div>
+      <div class="container">
+        <div class="section__header js-stagger">
+          <span class="section__label">Get in Touch</span>
+          <h1 class="section__title">Let's Build the<br><span class="gradient-text">Future Together.</span></h1>
+          <p class="section__sub">Have questions about our workshops or digital services? Drop us a message, and our team will get back to you within 24 hours.</p>
+        </div>
+
+        <div class="contact__layout js-stagger">
+          <!-- Contact Info Cards -->
+          <div class="contact__info">
+            <h3 style="font-family:var(--font-display); font-size:var(--text-xl); margin-bottom:var(--space-6); color:var(--text-primary);">Contact Information</h3>
+            
+            <div class="contact__info-item">
+              <div class="contact__info-icon">📞</div>
+              <div>
+                <span class="contact__info-label">Call Us</span>
+                <a href="tel:+916261072872" class="contact__info-value">+91 62610 72872</a>
+              </div>
+            </div>
+
+            <div class="contact__info-item">
+              <div class="contact__info-icon">✉️</div>
+              <div>
+                <span class="contact__info-label">Email Us</span>
+                <a href="mailto:hr.futurepilot@gmail.com" class="contact__info-value">hr.futurepilot@gmail.com</a>
+              </div>
+            </div>
+
+            <div class="card" style="margin-top:var(--space-10); border-color:var(--brand-orange-glow); background:rgba(255, 107, 53, 0.03);">
+              <h4 style="font-family:var(--font-display); font-size:var(--text-base); color:var(--brand-orange); margin-bottom:var(--space-2);">For Educational Institutions</h4>
+              <p style="font-size:var(--text-sm); color:var(--text-secondary); line-height:var(--leading-normal);">Want to host a custom workshop or schedule a live demo of our hardware kits? Mention your school name in the form, and our training lead will coordinate with your team.</p>
+            </div>
           </div>
-          <div style="margin-bottom:20px;">
-            <label style="display:block; margin-bottom:8px; font-weight:600; color:var(--text-secondary);">Work Email</label>
-            <input type="email" style="width:100%; padding:14px; border:1px solid var(--border-strong); border-radius:12px;" required>
-          </div>
-          <div style="margin-bottom:24px;">
-            <label style="display:block; margin-bottom:8px; font-weight:600; color:var(--text-secondary);">Phone Number</label>
-            <input type="tel" style="width:100%; padding:14px; border:1px solid var(--border-strong); border-radius:12px;">
-          </div>
-          <button type="submit" class="btn btn--primary btn--full">Send Enquiry</button>
-        </form>
+
+          <!-- Contact Form -->
+          <form class="contact__form" id="contact-form">
+            <div class="form__group">
+              <input type="text" id="name" class="form__input" placeholder=" " required>
+              <label for="name" class="form__label">Full Name</label>
+            </div>
+            <div class="form__group">
+              <input type="email" id="email" class="form__input" placeholder=" " required>
+              <label for="email" class="form__label">Work Email</label>
+            </div>
+            <div class="form__group">
+              <input type="tel" id="phone" class="form__input" placeholder=" ">
+              <label for="phone" class="form__label">Phone Number</label>
+            </div>
+            <div class="form__group">
+              <textarea id="message" class="form__input" style="height:120px; resize:none; padding-top:var(--space-5);" placeholder=" " required></textarea>
+              <label for="message" class="form__label">Message / Requirements</label>
+            </div>
+            <button type="submit" class="btn btn--primary btn--full" style="font-size:var(--text-base);">Send Enquiry</button>
+          </form>
+        </div>
       </div>
     </section>
-  
-</main>
+
+  </main>
 
   <!-- Footer -->
   <footer id="footer" class="footer">
-    <div class="container footer__grid">
-      <div class="footer__brand">
-        <span class="footer__name">Future Pilots</span>
-        <p style="color:var(--text-secondary); font-size:var(--text-sm);">Transforming students from learners to innovators.</p>
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <span class="footer__name">Future Pilots</span>
+          <p class="footer__tagline">Transforming students from learners to innovators.</p>
+        </div>
+        <div class="footer__links">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="/about.html">About Us</a></li>
+            <li><a href="/pricing.html">Pricing</a></li>
+            <li><a href="/team.html">Our Team</a></li>
+          </ul>
+        </div>
+        <div class="footer__links">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="/education.html">Education</a></li>
+            <li><a href="/digital.html">Digital Solutions</a></li>
+            <li><a href="/contact.html">Book Workshop</a></li>
+          </ul>
+        </div>
+        <div class="footer__links">
+          <h4>Contact</h4>
+          <ul>
+            <li><a href="tel:+916261072872">+91 62610 72872</a></li>
+            <li><a href="mailto:hr.futurepilot@gmail.com">hr.futurepilot@gmail.com</a></li>
+          </ul>
+        </div>
       </div>
-      <div class="footer__links">
-        <h4>Quick Links</h4>
-        <ul>
-          <li><a href="/about.html">About Us</a></li>
-          <li><a href="/pricing.html">Pricing</a></li>
-          <li><a href="/team.html">Our Team</a></li>
-        </ul>
+      <div class="footer__bottom">
+        <span class="footer__copyright">© 2026 Future Pilots. All rights reserved.</span>
       </div>
-      <div class="footer__links">
-        <h4>Services</h4>
-        <ul>
-          <li><a href="/education.html">Education</a></li>
-          <li><a href="/digital.html">Digital Solutions</a></li>
-          <li><a href="/contact.html">Book Workshop</a></li>
-        </ul>
-      </div>
-      <div class="footer__links">
-        <h4>Contact</h4>
-        <ul>
-          <li><a href="tel:+916261072872">+91 62610 72872</a></li>
-          <li><a href="mailto:hr.futurepilot@gmail.com">hr.futurepilot@gmail.com</a></li>
-        </ul>
-      </div>
-    </div>
-    <div class="container" style="text-align:center; padding-top:var(--space-6); color:var(--text-tertiary); font-size:var(--text-sm);">
-      &copy; 2026 Future Pilots. All rights reserved.
     </div>
   </footer>
 

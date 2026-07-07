@@ -3,7 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Future Pilots — EdTech & Digital Solutions</title>
+  <title>Future Pilots Pricing — Transparent Workshop & SEO Plans</title>
+  <meta name="description" content="Transparent pricing for Future Pilots Education workshops and Digital SEO packages. From 1-Day Spark sessions at ₹2,000 to Premium 7-Day EV workshops, and SEO from ₹8,000/mo." />
   
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -40,68 +41,483 @@
   <!-- Main Content -->
   <main id="main-content" class="main-content">
 
-    <section class="section section--alt">
-      <div class="shape shape--blob2 shape--orange" style="width:400px; height:400px; top:-100px; right:-100px;"></div>
-      <div class="container section__header js-stagger">
+    <!-- Page Hero -->
+    <section class="section section--alt bg-grid" style="position:relative; overflow:hidden;">
+      <div class="shape shape--blob2 shape--orange" style="width:400px; height:400px; top:-100px; right:-100px; opacity:0.08;"></div>
+      <div class="container section__header js-stagger" style="padding: var(--space-16) var(--space-6) var(--space-8);">
         <p class="section__label">Investment</p>
-        <h1 class="section__title">Transparent, Value-Driven Plans</h1>
+        <h1 class="section__title" style="font-size:var(--text-4xl);">Transparent,<br>Value-Driven Plans.</h1>
+        <p class="section__sub">No hidden fees. No confusing packages. Just straightforward pricing that delivers real results for your school or business.</p>
       </div>
-      <div class="container js-stagger">
-        <div class="pricing__tabs">
-          <button class="pricing__tab active" data-tab="education">Education</button>
-          <button class="pricing__tab" data-tab="digital">Digital Solutions</button>
-        </div>
-        <div class="pricing__panels">
-          <div class="pricing__panel active" data-panel="education">
-            <h3 class="pricing__category-title">Immersive 4-Day Workshop (12-15 hrs)</h3>
-            <div class="pricing__cards">
-              <div class="card pricing__card">
-                <h4>AI/ML & Software</h4>
-                <div class="pricing__price">₹8,000</div>
-                <p style="color:var(--text-secondary);">per student</p>
-              </div>
-              <div class="card pricing__card">
-                <h4>Hardware & Robotics</h4>
-                <div class="pricing__price">₹12,000</div>
-                <p style="color:var(--text-secondary);">per student</p>
-              </div>
-              <div class="card pricing__card">
-                <h4>Automobile & EV</h4>
-                <div class="pricing__price">₹15,000</div>
-                <p style="color:var(--text-secondary);">per student</p>
-              </div>
-            </div>
-          </div>
-          <div class="pricing__panel" data-panel="digital">
-             <h3 class="pricing__category-title">Growth & SEO Packages</h3>
-             <div class="pricing__cards pricing__cards--four">
-               <div class="card pricing__card">
-                 <h4>Setup Package</h4>
-                 <div class="pricing__price">₹15,000</div>
-                 <p style="color:var(--text-secondary);">One-Time</p>
-               </div>
-               <div class="card pricing__card">
-                 <h4>Starter Package</h4>
-                 <div class="pricing__price">₹8,000</div>
-                 <p style="color:var(--text-secondary);">per month</p>
-               </div>
-               <div class="card pricing__card card--accent-teal" style="border-color:var(--accent-teal);">
-                 <h4>Growth Package</h4>
-                 <div class="pricing__price" style="color:var(--accent-teal);">₹11,000</div>
-                 <p style="color:var(--text-secondary);">per month</p>
-               </div>
-               <div class="card pricing__card">
-                 <h4>Premium Package</h4>
-                 <div class="pricing__price">₹14,000</div>
-                 <p style="color:var(--text-secondary);">per month</p>
-               </div>
-             </div>
-          </div>
+      <!-- Tab Toggle -->
+      <div class="container js-stagger" style="padding-bottom:var(--space-8);">
+        <div class="pricing__tabs" id="pricing-tabs">
+          <button class="pricing__tab active" data-tab="education" id="tab-education">📚 Education Workshops</button>
+          <button class="pricing__tab" data-tab="digital" id="tab-digital">📈 Digital & SEO Services</button>
         </div>
       </div>
     </section>
-  
-</main>
+
+    <!-- ============================
+         EDUCATION PRICING PANELS
+    ============================= -->
+    <div id="panel-education" class="pricing-full-panel">
+
+      <!-- 1-Day Workshops -->
+      <section class="section bg-grid">
+        <div class="container">
+          <div class="section__header js-stagger">
+            <span class="section__label">Format 1</span>
+            <h2 class="section__title">1-Day Spark Workshops</h2>
+            <p class="section__sub">4 Hours of high-energy learning. Perfect for Science Days, Orientation Events, and Career Fairs. Price per student.</p>
+          </div>
+          <div class="pricing__cards js-stagger">
+
+            <div class="card pricing__card">
+              <div class="pricing__card-icon">🎓</div>
+              <h4 class="pricing__card-title">Career Counselling</h4>
+              <p class="pricing__card-sub">Guidance Session</p>
+              <div class="pricing__price">₹2,000<span class="pricing__per">/student</span></div>
+              <ul class="vertical-card__list" style="margin-top:var(--space-6);">
+                <li>Tech & career pathway mapping</li>
+                <li>Industry landscape overview</li>
+                <li>Q&A with a domain expert</li>
+                <li>Digital resource pack</li>
+                <li>Digital certificate</li>
+              </ul>
+              <a href="/contact.html" class="btn btn--outline btn--full" style="margin-top:var(--space-8);">Book Now</a>
+            </div>
+
+            <div class="card pricing__card">
+              <div class="pricing__card-icon">🤖</div>
+              <h4 class="pricing__card-title">AI / ML Intro</h4>
+              <p class="pricing__card-sub">Software Track</p>
+              <div class="pricing__price">₹3,000<span class="pricing__per">/student</span></div>
+              <ul class="vertical-card__list" style="margin-top:var(--space-6);">
+                <li>Intro to AI & how it works</li>
+                <li>Live prompt engineering demo</li>
+                <li>1 guided AI mini-project</li>
+                <li>Career paths in AI/ML</li>
+                <li>Digital certificate</li>
+              </ul>
+              <a href="/contact.html" class="btn btn--outline btn--full" style="margin-top:var(--space-8);">Book Now</a>
+            </div>
+
+            <div class="card pricing__card card--accent-orange" style="border-color:rgba(249,115,22,0.3);">
+              <div class="pricing__card-badge">Most Booked</div>
+              <div class="pricing__card-icon">⚡</div>
+              <h4 class="pricing__card-title">EV Engineering Intro</h4>
+              <p class="pricing__card-sub">Automobile Track</p>
+              <div class="pricing__price" style="color:var(--accent-orange);">₹4,000<span class="pricing__per">/student</span></div>
+              <ul class="vertical-card__list" style="margin-top:var(--space-6);">
+                <li>EV market & India's roadmap</li>
+                <li>Battery & motor live demo</li>
+                <li>Mini EV circuit assembly</li>
+                <li>Careers in EV sector</li>
+                <li>Digital certificate</li>
+              </ul>
+              <a href="/contact.html" class="btn btn--primary btn--full" style="margin-top:var(--space-8);">Book Now</a>
+            </div>
+
+            <div class="card pricing__card">
+              <div class="pricing__card-icon">🦾</div>
+              <h4 class="pricing__card-title">Robotics Intro</h4>
+              <p class="pricing__card-sub">Hardware Track</p>
+              <div class="pricing__price">₹3,500<span class="pricing__per">/student</span></div>
+              <ul class="vertical-card__list" style="margin-top:var(--space-6);">
+                <li>Arduino programming basics</li>
+                <li>Sensor integration demo</li>
+                <li>1 robot mini-build</li>
+                <li>Careers in robotics</li>
+                <li>Digital certificate</li>
+              </ul>
+              <a href="/contact.html" class="btn btn--outline btn--full" style="margin-top:var(--space-8);">Book Now</a>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- 4-Day Workshops -->
+      <section class="section section--alt bg-grid">
+        <div class="container">
+          <div class="section__header js-stagger">
+            <span class="section__label">Format 2 — ⭐ Most Popular</span>
+            <h2 class="section__title">4-Day Immersive Workshops</h2>
+            <p class="section__sub">12–15 Hours of structured, hands-on learning across 4 sessions. Students build a complete working project.</p>
+          </div>
+          <div class="pricing__cards js-stagger">
+
+            <div class="card pricing__card">
+              <div class="pricing__card-icon">💻</div>
+              <h4 class="pricing__card-title">AI/ML & Software</h4>
+              <p class="pricing__card-sub">Software Track</p>
+              <div class="pricing__price">₹8,000<span class="pricing__per">/student</span></div>
+              <ul class="vertical-card__list" style="margin-top:var(--space-6);">
+                <li>Full AI/ML curriculum (12 hrs)</li>
+                <li>Agentic AI web app build</li>
+                <li>3 hands-on lab sessions</li>
+                <li>Laptop + cloud tools provided</li>
+                <li>Industry mentor session</li>
+                <li>Printed certificate</li>
+              </ul>
+              <a href="/contact.html" class="btn btn--outline btn--full" style="margin-top:var(--space-8);">Book Now</a>
+            </div>
+
+            <div class="card pricing__card">
+              <div class="pricing__card-icon">🦾</div>
+              <h4 class="pricing__card-title">Hardware & Robotics</h4>
+              <p class="pricing__card-sub">Hardware Track</p>
+              <div class="pricing__price">₹12,000<span class="pricing__per">/student</span></div>
+              <ul class="vertical-card__list" style="margin-top:var(--space-6);">
+                <li>Arduino + Raspberry Pi mastery</li>
+                <li>Sensor integration (5+ types)</li>
+                <li>IoT cloud dashboard build</li>
+                <li>Hardware kit access</li>
+                <li>Robot project (line-follower)</li>
+                <li>Printed certificate</li>
+              </ul>
+              <a href="/contact.html" class="btn btn--outline btn--full" style="margin-top:var(--space-8);">Book Now</a>
+            </div>
+
+            <div class="card pricing__card card--accent-teal" style="border-color:rgba(13,148,136,0.3);">
+              <div class="pricing__card-badge" style="background:var(--accent-teal);">Premium Track</div>
+              <div class="pricing__card-icon">⚡</div>
+              <h4 class="pricing__card-title">Automobile & EV</h4>
+              <p class="pricing__card-sub">Automobile Track</p>
+              <div class="pricing__price" style="color:var(--accent-teal);">₹15,000<span class="pricing__per">/student</span></div>
+              <ul class="vertical-card__list" style="margin-top:var(--space-6);">
+                <li>Full EV systems curriculum</li>
+                <li>BMS & power electronics lab</li>
+                <li>Regenerative braking demo</li>
+                <li>Mini EV model build & test</li>
+                <li>EV industry expert session</li>
+                <li>Printed certificate</li>
+              </ul>
+              <a href="/contact.html" class="btn btn--primary btn--full" style="margin-top:var(--space-8); background:var(--accent-teal); border-color:var(--accent-teal);">Book Now</a>
+            </div>
+
+            <div class="card pricing__card">
+              <div class="pricing__card-icon">🛡️</div>
+              <h4 class="pricing__card-title">Cyber Security</h4>
+              <p class="pricing__card-sub">Security Track</p>
+              <div class="pricing__price">₹9,000<span class="pricing__per">/student</span></div>
+              <ul class="vertical-card__list" style="margin-top:var(--space-6);">
+                <li>Ethical hacking full module</li>
+                <li>Kali Linux lab environment</li>
+                <li>Web app security testing</li>
+                <li>Live CTF challenge</li>
+                <li>Incident response drill</li>
+                <li>Printed certificate</li>
+              </ul>
+              <a href="/contact.html" class="btn btn--outline btn--full" style="margin-top:var(--space-8);">Book Now</a>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- 7-Day Premium -->
+      <section class="section bg-grid">
+        <div class="container">
+          <div class="section__header js-stagger">
+            <span class="section__label">Format 3 — Premium</span>
+            <h2 class="section__title">7-Day Deep Immersion</h2>
+            <p class="section__sub">The complete curriculum. Covers an entire domain end-to-end, culminating in a hackathon presentation to an industry panel.</p>
+          </div>
+          <div class="pricing__cards js-stagger">
+
+            <div class="card pricing__card">
+              <div class="pricing__card-icon">💻</div>
+              <h4 class="pricing__card-title">AI/ML Premium</h4>
+              <p class="pricing__card-sub">Full Curriculum · 7 Days</p>
+              <div class="pricing__price">₹14,000<span class="pricing__per">/student</span></div>
+              <ul class="vertical-card__list" style="margin-top:var(--space-6);">
+                <li>Complete AI/ML pathway</li>
+                <li>Agentic AI + full stack project</li>
+                <li>Take-home reference kit</li>
+                <li>3 industry mentor sessions</li>
+                <li>Hackathon day + panel judging</li>
+                <li>Letter of Recommendation</li>
+                <li>Guaranteed internship interview</li>
+              </ul>
+              <a href="/contact.html" class="btn btn--outline btn--full" style="margin-top:var(--space-8);">Book Now</a>
+            </div>
+
+            <div class="card pricing__card">
+              <div class="pricing__card-icon">🦾</div>
+              <h4 class="pricing__card-title">Robotics & IoT Premium</h4>
+              <p class="pricing__card-sub">Full Curriculum · 7 Days</p>
+              <div class="pricing__price">₹16,000<span class="pricing__per">/student</span></div>
+              <ul class="vertical-card__list" style="margin-top:var(--space-6);">
+                <li>Complete robotics + IoT pathway</li>
+                <li>Take-home hardware kit</li>
+                <li>Advanced sensor + cloud project</li>
+                <li>3 industry mentor sessions</li>
+                <li>Hackathon day + panel judging</li>
+                <li>Letter of Recommendation</li>
+                <li>Guaranteed internship interview</li>
+              </ul>
+              <a href="/contact.html" class="btn btn--outline btn--full" style="margin-top:var(--space-8);">Book Now</a>
+            </div>
+
+            <div class="card pricing__card card--accent-orange" style="border-color:rgba(249,115,22,0.3);">
+              <div class="pricing__card-badge">Top Tier</div>
+              <div class="pricing__card-icon">⚡</div>
+              <h4 class="pricing__card-title">EV Engineering Premium</h4>
+              <p class="pricing__card-sub">Full Curriculum · 7 Days</p>
+              <div class="pricing__price" style="color:var(--accent-orange);">₹17,000<span class="pricing__per">/student</span></div>
+              <ul class="vertical-card__list" style="margin-top:var(--space-6);">
+                <li>Complete EV engineering pathway</li>
+                <li>Full EV model build & teardown</li>
+                <li>Take-home kit + component set</li>
+                <li>3 EV industry expert sessions</li>
+                <li>Hackathon day + investor pitch</li>
+                <li>Letter of Recommendation</li>
+                <li>Guaranteed internship interview</li>
+              </ul>
+              <a href="/contact.html" class="btn btn--primary btn--full" style="margin-top:var(--space-8);">Book Now</a>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- Custom & Bulk Note -->
+      <section class="section section--alt bg-grid">
+        <div class="container js-stagger" style="max-width:800px; text-align:center;">
+          <span class="section__label">Custom & Bulk</span>
+          <h2 class="section__title">Need a Custom Program?</h2>
+          <p class="section__sub" style="margin-bottom:var(--space-8);">Running multiple workshops across a semester? Bulk bookings for 100+ students? Need a completely custom curriculum? We'll build it together.</p>
+          <div class="card" style="text-align:left; padding:var(--space-8);">
+            <div style="display:grid; grid-template-columns:1fr 1fr; gap:var(--space-6);">
+              <div>
+                <h4 style="margin-bottom:var(--space-3); color:var(--accent-orange);">Bulk Discounts Available</h4>
+                <ul class="vertical-card__list">
+                  <li>50+ students: 10% off per-student price</li>
+                  <li>100+ students: 18% off per-student price</li>
+                  <li>200+ students: Custom quote</li>
+                </ul>
+              </div>
+              <div>
+                <h4 style="margin-bottom:var(--space-3); color:var(--accent-teal);">Annual School Programs</h4>
+                <ul class="vertical-card__list">
+                  <li>Semester-long curriculum design</li>
+                  <li>Dedicated resident mentor</li>
+                  <li>Monthly progress reports</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <a href="/contact.html" class="btn btn--primary" style="margin-top:var(--space-8);">Request Custom Quote</a>
+        </div>
+      </section>
+
+    </div>
+
+    <!-- ============================
+         DIGITAL PRICING PANELS
+    ============================= -->
+    <div id="panel-digital" class="pricing-full-panel" style="display:none;">
+
+      <!-- Setup Package -->
+      <section class="section bg-grid">
+        <div class="container">
+          <div class="section__header js-stagger">
+            <span class="section__label">One-Time Setup</span>
+            <h2 class="section__title">Digital Foundation Setup</h2>
+            <p class="section__sub">Build your brand's online presence from the ground up. Everything you need to launch and be found.</p>
+          </div>
+          <div class="js-stagger" style="max-width:640px; margin: 0 auto;">
+            <div class="card card--accent-purple" style="border-color:rgba(139,92,246,0.3);">
+              <div style="display:flex; justify-content:space-between; align-items:flex-start; flex-wrap:wrap; gap:var(--space-4);">
+                <div>
+                  <p class="pricing__card-sub">One-Time Investment</p>
+                  <h3 class="pricing__card-title" style="font-size:var(--text-2xl);">Setup Package</h3>
+                </div>
+                <div class="pricing__price" style="color:var(--accent-purple); font-size:var(--text-3xl);">₹15,000</div>
+              </div>
+              <div style="display:grid; grid-template-columns:1fr 1fr; gap:var(--space-6); margin-top:var(--space-6);">
+                <div>
+                  <h5 style="margin-bottom:var(--space-3); color:var(--text-secondary); font-size:var(--text-sm); text-transform:uppercase; letter-spacing:var(--tracking-wide);">Social Presence</h5>
+                  <ul class="vertical-card__list">
+                    <li>LinkedIn profile setup & optimization</li>
+                    <li>Instagram business account setup</li>
+                    <li>Professional bio & content strategy</li>
+                    <li>Brand visual kit (logos, colours)</li>
+                  </ul>
+                </div>
+                <div>
+                  <h5 style="margin-bottom:var(--space-3); color:var(--text-secondary); font-size:var(--text-sm); text-transform:uppercase; letter-spacing:var(--tracking-wide);">Search Setup</h5>
+                  <ul class="vertical-card__list">
+                    <li>Google My Business setup & verification</li>
+                    <li>Google Search Console setup</li>
+                    <li>Analytics (GA4) installation</li>
+                    <li>Initial keyword research report</li>
+                  </ul>
+                </div>
+              </div>
+              <a href="/contact.html" class="btn btn--primary btn--full" style="margin-top:var(--space-8); background:var(--accent-purple); border-color:var(--accent-purple);">Get Started</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Monthly SEO Packages -->
+      <section class="section section--alt bg-grid">
+        <div class="container">
+          <div class="section__header js-stagger">
+            <span class="section__label">Monthly Retainers</span>
+            <h2 class="section__title">Growth & SEO Packages.</h2>
+            <p class="section__sub">Ongoing monthly services to grow your organic traffic, build brand authority, and generate consistent leads.</p>
+          </div>
+          <div class="pricing__cards pricing__cards--four js-stagger">
+
+            <!-- Starter -->
+            <div class="card pricing__card">
+              <div class="pricing__card-icon">🌱</div>
+              <h4 class="pricing__card-title">Starter</h4>
+              <p class="pricing__card-sub">For New Brands</p>
+              <div class="pricing__price">₹8,000<span class="pricing__per">/mo</span></div>
+              <div class="pricing__divider"></div>
+              <h5 class="pricing__section-label">SEO Essentials</h5>
+              <ul class="vertical-card__list">
+                <li>On-page SEO (up to 10 pages)</li>
+                <li>Monthly keyword tracking (30 KWs)</li>
+                <li>Monthly performance report</li>
+                <li>Google My Business management</li>
+              </ul>
+              <h5 class="pricing__section-label" style="margin-top:var(--space-4);">Content</h5>
+              <ul class="vertical-card__list">
+                <li>2 blog posts/month</li>
+                <li>4 social media posts</li>
+              </ul>
+              <a href="/contact.html" class="btn btn--outline btn--full" style="margin-top:var(--space-8);">Get Started</a>
+            </div>
+
+            <!-- Growth -->
+            <div class="card pricing__card">
+              <div class="pricing__card-icon">📈</div>
+              <h4 class="pricing__card-title">Growth</h4>
+              <p class="pricing__card-sub">For Growing Brands</p>
+              <div class="pricing__price">₹11,000<span class="pricing__per">/mo</span></div>
+              <div class="pricing__divider"></div>
+              <h5 class="pricing__section-label">SEO + Content</h5>
+              <ul class="vertical-card__list">
+                <li>On-page SEO (up to 25 pages)</li>
+                <li>Monthly keyword tracking (75 KWs)</li>
+                <li>Technical SEO audit</li>
+                <li>Competitor analysis report</li>
+              </ul>
+              <h5 class="pricing__section-label" style="margin-top:var(--space-4);">Ads & Social</h5>
+              <ul class="vertical-card__list">
+                <li>Ads generation (Google/Meta)</li>
+                <li>4 blog posts/month</li>
+                <li>12 social media posts</li>
+              </ul>
+              <a href="/contact.html" class="btn btn--outline btn--full" style="margin-top:var(--space-8);">Get Started</a>
+            </div>
+
+            <!-- Premium -->
+            <div class="card pricing__card card--accent-teal" style="border-color:rgba(13,148,136,0.4); box-shadow: 0 20px 60px rgba(13,148,136,0.12);">
+              <div class="pricing__card-badge" style="background:var(--accent-teal);">⭐ Most Popular</div>
+              <div class="pricing__card-icon">🚀</div>
+              <h4 class="pricing__card-title">Premium</h4>
+              <p class="pricing__card-sub">For Market Leaders</p>
+              <div class="pricing__price" style="color:var(--accent-teal);">₹14,000<span class="pricing__per">/mo</span></div>
+              <div class="pricing__divider"></div>
+              <h5 class="pricing__section-label">Full SEO Suite</h5>
+              <ul class="vertical-card__list">
+                <li>Full-site SEO optimization</li>
+                <li>Monthly keyword tracking (150 KWs)</li>
+                <li>Advanced technical SEO</li>
+                <li>Backlink building (10 links/mo)</li>
+                <li>Competitor gap analysis</li>
+              </ul>
+              <h5 class="pricing__section-label" style="margin-top:var(--space-4);">Leads & Growth</h5>
+              <ul class="vertical-card__list">
+                <li>Lead generation campaigns</li>
+                <li>Google + Meta Ads management</li>
+                <li>6 blog posts/month</li>
+                <li>20 social media posts</li>
+                <li>Monthly strategy call</li>
+              </ul>
+              <a href="/contact.html" class="btn btn--primary btn--full" style="margin-top:var(--space-8); background:var(--accent-teal); border-color:var(--accent-teal);">Get Started</a>
+            </div>
+
+            <!-- Enterprise -->
+            <div class="card pricing__card">
+              <div class="pricing__card-icon">🏢</div>
+              <h4 class="pricing__card-title">Enterprise</h4>
+              <p class="pricing__card-sub">Full-Service Agency</p>
+              <div class="pricing__price">Let's Talk</div>
+              <div class="pricing__divider"></div>
+              <h5 class="pricing__section-label">Everything in Premium, plus:</h5>
+              <ul class="vertical-card__list">
+                <li>Custom web development</li>
+                <li>Dedicated account manager</li>
+                <li>Priority support (24h SLA)</li>
+                <li>Custom analytics dashboards</li>
+                <li>Full brand strategy</li>
+                <li>Quarterly business review</li>
+                <li>Unlimited content creation</li>
+              </ul>
+              <a href="/contact.html" class="btn btn--outline btn--full" style="margin-top:var(--space-8);">Contact Us</a>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- Feature Comparison Table -->
+      <section class="section bg-grid">
+        <div class="container">
+          <div class="section__header js-stagger">
+            <span class="section__label">Compare Plans</span>
+            <h2 class="section__title">What's Included.</h2>
+          </div>
+          <div class="comparison-table js-stagger">
+            <table>
+              <thead>
+                <tr>
+                  <th>Feature</th>
+                  <th>Starter</th>
+                  <th>Growth</th>
+                  <th class="table-highlight">Premium</th>
+                  <th>Enterprise</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr><td>On-Page SEO</td><td>10 pages</td><td>25 pages</td><td class="table-highlight">Full site</td><td>Full site+</td></tr>
+                <tr><td>Keyword Tracking</td><td>30 KWs</td><td>75 KWs</td><td class="table-highlight">150 KWs</td><td>Unlimited</td></tr>
+                <tr><td>Technical SEO Audit</td><td>—</td><td>✓</td><td class="table-highlight">✓ Advanced</td><td>✓ Custom</td></tr>
+                <tr><td>Backlink Building</td><td>—</td><td>—</td><td class="table-highlight">10/month</td><td>Custom</td></tr>
+                <tr><td>Google/Meta Ads</td><td>—</td><td>✓</td><td class="table-highlight">✓ Full Mgmt</td><td>✓ Custom</td></tr>
+                <tr><td>Lead Generation</td><td>—</td><td>—</td><td class="table-highlight">✓</td><td>✓</td></tr>
+                <tr><td>Blog Posts / Month</td><td>2</td><td>4</td><td class="table-highlight">6</td><td>Unlimited</td></tr>
+                <tr><td>Social Media Posts</td><td>4</td><td>12</td><td class="table-highlight">20</td><td>Unlimited</td></tr>
+                <tr><td>Monthly Strategy Call</td><td>—</td><td>—</td><td class="table-highlight">✓</td><td>✓ Weekly</td></tr>
+                <tr><td>Dedicated Manager</td><td>—</td><td>—</td><td class="table-highlight">—</td><td>✓</td></tr>
+                <tr><td>Web Development</td><td>—</td><td>—</td><td class="table-highlight">—</td><td>✓ Custom</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+    </div>
+
+    <!-- Shared CTA -->
+    <section class="section section--alt bg-grid">
+      <div class="container js-stagger" style="text-align:center; max-width:700px;">
+        <span class="section__label">Not Sure Which Plan?</span>
+        <h2 class="section__title">Let's Talk First.</h2>
+        <p class="section__sub" style="margin-bottom:var(--space-8);">Book a free 30-minute consultation with our team. We'll understand your goals and recommend the exact right plan — no pressure, no sales pitch.</p>
+        <a href="/contact.html" class="btn btn--primary" style="font-size:var(--text-md);">Book Free Consultation →</a>
+      </div>
+    </section>
+
+  </main>
 
   <!-- Footer -->
   <footer id="footer" class="footer">
@@ -140,5 +556,20 @@
   </footer>
 
   <script type="module" src="/src/main.js"></script>
+  <script>
+    // Pricing tab toggle
+    document.addEventListener('DOMContentLoaded', function() {
+      const tabs = document.querySelectorAll('.pricing__tab');
+      tabs.forEach(tab => {
+        tab.addEventListener('click', () => {
+          const target = tab.dataset.tab;
+          tabs.forEach(t => t.classList.remove('active'));
+          tab.classList.add('active');
+          document.getElementById('panel-education').style.display = target === 'education' ? '' : 'none';
+          document.getElementById('panel-digital').style.display = target === 'digital' ? '' : 'none';
+        });
+      });
+    });
+  </script>
 </body>
 </html>

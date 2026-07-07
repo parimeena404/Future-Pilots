@@ -1,5 +1,5 @@
 /* ============================================
-   CSS RESET — Modern, minimal
+   RESET — Modern, minimal
    ============================================ */
 *, *::before, *::after {
   box-sizing: border-box;
@@ -17,8 +17,7 @@ html {
 
 body {
   line-height: 1.5;
-  -webkit-font-smoothing: antialiased;
-  background-color: var(--bg-primary);
+  background-color: var(--ink);
   color: var(--text-primary);
   font-family: var(--font-body);
   overflow-x: hidden;
@@ -35,7 +34,7 @@ input, button, textarea, select {
 }
 
 button {
-  cursor: pointer;
+  cursor: none;
   border: none;
   background: none;
 }
@@ -45,49 +44,37 @@ a {
   text-decoration: none;
 }
 
-ul, ol {
-  list-style: none;
-}
+ul, ol { list-style: none; }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-display);
-  font-weight: 600;
+  font-weight: 700;
   line-height: var(--leading-tight);
   letter-spacing: var(--tracking-tight);
+  color: var(--text-primary);
   overflow-wrap: break-word;
 }
 
-p {
-  overflow-wrap: break-word;
-}
+p { overflow-wrap: break-word; }
 
 ::selection {
-  background-color: var(--accent);
-  color: var(--text-inverse);
+  background-color: rgba(255, 107, 53, 0.3);
+  color: var(--text-primary);
 }
 
 :focus-visible {
-  outline: 2px solid var(--accent);
+  outline: 2px solid var(--brand-orange);
   outline-offset: 4px;
   border-radius: var(--radius-sm);
 }
 
-/* Remove focus ring for mouse users */
-:focus:not(:focus-visible) {
-  outline: none;
-}
+:focus:not(:focus-visible) { outline: none; }
 
 /* Scrollbar */
-::-webkit-scrollbar {
-  width: 6px;
-}
-::-webkit-scrollbar-track {
-  background: transparent;
-}
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: var(--ink-2); }
 ::-webkit-scrollbar-thumb {
-  background: var(--glass-border);
+  background: var(--ink-4);
   border-radius: var(--radius-full);
 }
-::-webkit-scrollbar-thumb:hover {
-  background: var(--text-tertiary);
-}
+::-webkit-scrollbar-thumb:hover { background: rgba(255,107,53,0.4); }
